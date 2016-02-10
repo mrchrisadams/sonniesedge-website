@@ -21,52 +21,52 @@ Getting started with Jekyll is way way different from what I'm used to. First on
 
 
 
-{% highlight bash %}
+```bash
 gem install jekyll
-{% endhighlight %}
+```
 
 
 The concept of installing stuff in this way shouldn't weird me out. I mean, I use [Brew][8] and Drush every day. Why should this be any different? Possibly because this is the primary way of doing things, I'm used to a framework that has at least *some* GUI.
 
 Time to use Jekyll to make a skeleton site:
 
-{% highlight bash %}
+```bash
 cd ~/yoursitesdir/
 
 jekyll new testsite
-{% endhighlight %}
+```
 
-Okay, you've created a lot of stuff. Nothing's on fire. That's good. But this is all some kind of template, not a website. If I open index.html in a browser I just get curly brackets everywhere. 
+Okay, you've created a lot of stuff. Nothing's on fire. That's good. But this is all some kind of template, not a website. If I open index.html in a browser I just get curly brackets everywhere.
 
-Google for a while. 
+Google for a while.
 
 Oh, right, you've got to compile it:
 
 {% highlight bash %}
-jekyll build 
+jekyll build
 {% endhighlight %}
 
-Oooh, it's spat out a complete website in ./site - nice. You see, Jekyll is a site *compiler*, not a server-side app like Drupal, or Wordpress. Your build your templates, tweak your CSS and compile out to a directory. Want to run that compiled dir on a server? 
+Oooh, it's spat out a complete website in ./site - nice. You see, Jekyll is a site *compiler*, not a server-side app like Drupal, or Wordpress. Your build your templates, tweak your CSS and compile out to a directory. Want to run that compiled dir on a server?
 
 {% highlight bash %}
 jekyll serve --watch
 {% endhighlight %}
 
-This will start a webserver at http://localhost:4000, with your website running on it. That --watch parameter? It'll compile your website every time you make a change. With tiny sites this takes an instant, although I suspect you'll run into seconds delays with larger sites. 
+This will start a webserver at http://localhost:4000, with your website running on it. That --watch parameter? It'll compile your website every time you make a change. With tiny sites this takes an instant, although I suspect you'll run into seconds delays with larger sites.
 
 What I really had to get used to was not having a honking great LAMP stack sitting underneath my CSS. I'm too used to getting caught up in the management of that and not having chance to actually work on the frontend like I want to be doing.
 
 Jekyll is designed around a blogging paradigm, and allows you to write posts in [Markdown][3], which are then compiled out, using a template of your choosing, to HTML. Combine this with [Sass][5] and [Compass][6] for precompiling your CSS and you've got a nifty little blogging system. Deploying code is as simple as rsyncing your generated CSS and HTML up to your webserver.
 
-But this isn't where the cool shit has been happening. I've been playing with [Jekyll-Assets][4], which is an implementation of the Ruby Asset Pipeline for Jekyll. 
+But this isn't where the cool shit has been happening. I've been playing with [Jekyll-Assets][4], which is an implementation of the Ruby Asset Pipeline for Jekyll.
 
 {% highlight bash %}
 gem install jekyll-assets
 {% endhighlight %}
 
-This flummoxed me for a while. Everyone was going on about it, but I wasn't quite sure what it was. What it does is take the stuff that you'd normally need to do when manually building a site, such as compiling your Sass into CSS, minifying files, including CSS frameworks and their extensions, and *do it all for you*. 
+This flummoxed me for a while. Everyone was going on about it, but I wasn't quite sure what it was. What it does is take the stuff that you'd normally need to do when manually building a site, such as compiling your Sass into CSS, minifying files, including CSS frameworks and their extensions, and *do it all for you*.
 
-You've installed jekyll-assets on your machine. Now to get Jekyll to use it. 
+You've installed jekyll-assets on your machine. Now to get Jekyll to use it.
 
 Create a folder called "_plugins" and add the following to a file called "ext.rb":
 
@@ -74,7 +74,7 @@ Create a folder called "_plugins" and add the following to a file called "ext.rb
 require "jekyll-assets"
 {% endhighlight %}
 
-Nothing's happened. Just chill. Create a folder called "_assets" in the root. Stick in a folder called "stylesheets". Add a Sass stylesheet there. 
+Nothing's happened. Just chill. Create a folder called "_assets" in the root. Stick in a folder called "stylesheets". Add a Sass stylesheet there.
 
 Now go to your main HTML template and add the following to your header:
 
@@ -112,11 +112,11 @@ require "breakpoint"
 
 Media query breakpoints a-go-go.
 
-Jekyll is lovely, and powered-up with jekyll-assets it's amazingly simple to build up a site. Hopefully this isn't the last I'll see of the Ruby world. 
+Jekyll is lovely, and powered-up with jekyll-assets it's amazingly simple to build up a site. Hopefully this isn't the last I'll see of the Ruby world.
 
 Things to do:
 
-* Learn how to add gems to the project, rather than install them on the machine. Seems you can specify a download source and then the gems that need to be installed. 
+* Learn how to add gems to the project, rather than install them on the machine. Seems you can specify a download source and then the gems that need to be installed.
 * Learn what the hell all these things I'm installing are. It's a bit Dark Magik at the moment.
 
 
@@ -125,7 +125,7 @@ Things to do:
 [whoah]: http://www.reactiongifs.com/wp-content/uploads/2013/10/woah.gif
 [wtf]: http://www.reactiongifs.com/wp-content/gallery/wtf/seriously.gif
 
-[1]: http://jekyllrb.com 
+[1]: http://jekyllrb.com
 [2]: http://drupal.org
 [3]: http://daringfireball.net/projects/markdown/
 [4]: https://github.com/ixti/jekyll-assets
