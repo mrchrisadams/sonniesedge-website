@@ -19,7 +19,7 @@ Many articles advocate analysing a page to determine what critical CSS needs to 
 
 Personally, I think it's better to manually control critical CSS. By having a critical.css stylesheet, styles that form the backbone of a site - typography, spacing, perhaps some basic grids - can be pulled in from Sass components.
 
-{% highlight bash %}
+```bash
 
 |- critical.scss
 |-- _normalize.scss
@@ -35,13 +35,13 @@ Personally, I think it's better to manually control critical CSS. By having a cr
 |-- etc
 |-- etc
 
-{% endhighlight %}
+```
 
 These can then be referenced as usual from your HTML.
 
-{% highlight html %}
+```html
 <link rel="stylesheet" href="/theme/css/critical.css">
-{% endhighlight %}
+```
 
 "But hang on", you say, "the critical.css stuff still isn't inlined, is it, you twonk?". You're correct, my friend. To inline the critical.css we need to turn to a Grunt plugin to help us out.
 

@@ -22,7 +22,7 @@ Getting started with Jekyll is way way different from what I'm used to. First on
 
 
 ```bash
-gem install jekyll
+$ gem install jekyll
 ```
 
 
@@ -31,9 +31,9 @@ The concept of installing stuff in this way shouldn't weird me out. I mean, I us
 Time to use Jekyll to make a skeleton site:
 
 ```bash
-cd ~/yoursitesdir/
+$ cd ~/yoursitesdir/
 
-jekyll new testsite
+$ jekyll new testsite
 ```
 
 Okay, you've created a lot of stuff. Nothing's on fire. That's good. But this is all some kind of template, not a website. If I open index.html in a browser I just get curly brackets everywhere.
@@ -42,15 +42,15 @@ Google for a while.
 
 Oh, right, you've got to compile it:
 
-{% highlight bash %}
-jekyll build
-{% endhighlight %}
+```bash
+$ jekyll build
+```
 
 Oooh, it's spat out a complete website in ./site - nice. You see, Jekyll is a site *compiler*, not a server-side app like Drupal, or Wordpress. Your build your templates, tweak your CSS and compile out to a directory. Want to run that compiled dir on a server?
 
-{% highlight bash %}
-jekyll serve --watch
-{% endhighlight %}
+```bash
+$ jekyll serve --watch
+```
 
 This will start a webserver at http://localhost:4000, with your website running on it. That --watch parameter? It'll compile your website every time you make a change. With tiny sites this takes an instant, although I suspect you'll run into seconds delays with larger sites.
 
@@ -60,9 +60,9 @@ Jekyll is designed around a blogging paradigm, and allows you to write posts in 
 
 But this isn't where the cool shit has been happening. I've been playing with [Jekyll-Assets][4], which is an implementation of the Ruby Asset Pipeline for Jekyll.
 
-{% highlight bash %}
-gem install jekyll-assets
-{% endhighlight %}
+```bash
+$ gem install jekyll-assets
+```
 
 This flummoxed me for a while. Everyone was going on about it, but I wasn't quite sure what it was. What it does is take the stuff that you'd normally need to do when manually building a site, such as compiling your Sass into CSS, minifying files, including CSS frameworks and their extensions, and *do it all for you*.
 
@@ -70,45 +70,41 @@ You've installed jekyll-assets on your machine. Now to get Jekyll to use it.
 
 Create a folder called "_plugins" and add the following to a file called "ext.rb":
 
-{% highlight ruby %}
+```ruby
 require "jekyll-assets"
-{% endhighlight %}
+```
 
 Nothing's happened. Just chill. Create a folder called "_assets" in the root. Stick in a folder called "stylesheets". Add a Sass stylesheet there.
 
 Now go to your main HTML template and add the following to your header:
 
-{% highlight ruby %}
 
-{{ "{% stylesheet syntax " }}%}
-
-{% endhighlight %}
 
 Check your generated HTML - your Sass stylsheet has been processed, written and included into your HTML as a link. Now you can update your Sass file, save it and Jekyll will automatically process it.
 
 Jekyll-assets comes with support for major Sass libraries builtin:
 
-{% highlight ruby %}
+```ruby
 require "jekyll-assets/compass"
-{% endhighlight %}
+```
 
-{% highlight sass %}
+```scss
 @import "compass";
-{% endhighlight %}
+```
 
 ![][whoah]
 
 I hit a stumbling block when I went to add the [Breakpoint][6] Compass library to my test site. I couldn't see how to add it at all. Took me a while to figure that you have to install the Breakpoint gem
 
-{% highlight bash %}
-gem install breakpoint
-{% endhighlight %}
+```bash
+$ gem install breakpoint
+```
 
 and then include the gem in the ext.rb file, *before* the Compass require line. Seems backwards to me, but it works.
 
-{% highlight ruby %}
+```ruby
 require "breakpoint"
-{% endhighlight %}
+```
 
 Media query breakpoints a-go-go.
 

@@ -1,23 +1,37 @@
 ---
-layout: default
+layout: page
+title: I tried to be professional once
+
+background: tokyo.jpg
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="front-page">
+    <div class="front1">
+      <img src="/images/pages/photo.jpg">
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="front2">
+    <p class="lead">I'm Charlie (aka sonniesedge), front-end web developer, currently working at the BBC in London.</p>
 
-</div>
+    <p><strike>I'm passionate about</strike> - wait, I despise that phrase - really, REALLY, good at frontend processes and architecture, delivering a consistent experience to all types and sizes of devices, and making sites easy to use.</p>
+
+    <p>I'm pretty big on the following processes and technologies:</p>
+
+    <ul>
+      <li><a href="http://sass-lang.com/">Sass</a> - there was a world before CSS preprocessing. I choose not to remember it.</li>
+      <li><a href="http://gruntjs.com/">Grunt</a> - automate everything!</li>
+      <li><a href="http://bradfrostweb.com/blog/post/the-principles-of-adaptive-design/">Adaptive Web Design</a> - of which Responsive Web Design is but a small part.</li>
+      <li><a href="/blog/visual-regression-testing">Frontend automated testing</a>.</li>
+      <li><a href="http://ux.mailchimp.com/patterns">Component-based design</a> - pattern libraries and living styleguides are the standard now.</li>
+    </ul>
+
+
+  </div>
+
+
+  </div>
+
+  </div>

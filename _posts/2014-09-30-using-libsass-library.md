@@ -25,32 +25,32 @@ I'm using [Homebrew](http://brew.sh/) on OSX for this:
 
 Install the core libsass library from Homebrew. Unfortunately, the version of libsass provided by Homebrew is v1.0.1 - workable, but very, very old. If you want to use that version just:
 
-{% highlight bash %}
-brew install libsass
-{% endhighlight %}
+```bash
+$ brew install libsass
+```
 
 However, if you want to use the latest, greatest, cutting-edge code, then use the following to install the [HEAD versions of the SassC and libsass libraries](https://github.com/benschwarz/homebrew-sassc):
 
-{% highlight bash %}
-brew tap benschwarz/homebrew-sassc
-brew install benschwarz/sassc/sassc --HEAD
-{% endhighlight %}
+```bash
+$ brew tap benschwarz/homebrew-sassc
+$ brew install benschwarz/sassc/sassc --HEAD
+```
 
 Now, libsass by itself isn't very useful. What's needed is an implementation that you can make use of. For that I'm using [node-sass](https://github.com/sass/node-sass), an npm library that allows node.js to interface with the libsass library.
 
-{% highlight bash %}
-npm install --save-dev node-sass
-{% endhighlight %}
+```bash
+$ npm install --save-dev node-sass
+```
 
 Again, if you're not writing node.js applications yourself, this isn't much use. What you need to is install grunt-sass.
 
-{% highlight bash %}
-npm install --save-dev node-sass
-{% endhighlight %}
+```bash
+$ npm install --save-dev node-sass
+```
 
 This allows you to call libsass from Grunt directly. I use the following for this site:
 
-{% highlight sass %}
+```javascript
 // SASS
 // Compile Sass files (in .scss format) into CSS files
 sass: {
@@ -69,7 +69,7 @@ sass: {
   }
 }
 
-{% endhighlight %}
+```
 
 
 

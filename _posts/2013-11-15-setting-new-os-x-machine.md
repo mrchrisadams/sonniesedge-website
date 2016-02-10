@@ -13,7 +13,7 @@ Being the techno-hipster that I am, I've found myself using Macs for nearly ever
 
 # Essential apps
 
-## Google Chrome 
+## Google Chrome
 
 It's the very first thing, to stop me having to use Chrome's pretty, but weirdly-intense-about-her-fingernail-collection, cousin, Safari.
 
@@ -35,9 +35,9 @@ Kick Bash up the arse and get Zsh installed. Offers auto-completion. memory betw
 
 Macports was once the daddy of package managers, but Brew is where it's at now. Rapidly updated and all the formulaes you'll ever need. Type:
 
-{% highlight bash %}
+```bash
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-{% endhighlight %}
+```
 
 into your soon to be banished Terminal to get going.
 
@@ -75,9 +75,9 @@ Actually, that last one was a complete lie. I've switched from Sublime to Phpsto
 
 Tiny command-line app that's like top after a few tokes.
 
-{% highlight bash %}
+```bash
 brew install htop
-{% endhighlight %}
+```
 
 ------------------------------
 
@@ -91,23 +91,23 @@ Yes, PHP is a hateful pile of inconsistent nonsense, and makes backend devs spit
 
 OS X comes with PHP installed. However, it's not easy to get custom extensions working with it. It's therefore easier to install a copy of PHP via Brew and install extensions more easily with that.
 
-{% highlight bash %}
+```bash
 brew tap homebrew/dupes
 brew tap josegonzalez/homebrew-php
 brew install php53 --with-mysql
-{% endhighlight %}
+```
 
 To activate new php on apache:
 
-{% highlight bash %}
+```bash
 vim /private/etc/apache2/httpd.conf
-{% endhighlight %}
+```
 
 Add the following (will be different depending on what version gets compiled: 5.3 vs 5.4, etc):
 
-{% highlight bash %}
+```bash
 LoadModule php5_module /usr/local/opt/php53/libexec/apache2/libphp5.so
-{% endhighlight %}
+```
 
 The php.ini is located at: /usr/local/etc/php/5.3/php.ini
 
@@ -115,15 +115,15 @@ The php.ini is located at: /usr/local/etc/php/5.3/php.ini
 
 To run apache at system start you'll need to use OSX's launch system:
 
-{% highlight bash %}
+```bash
 sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist
-{% endhighlight %}
+```
 
 To control the server use:
 
-{% highlight bash %}
+```bash
 sudo apachectl start|stop|restart|status
-{% endhighlight %}
+```
 
 ## Running multiple test sites locally
 
@@ -131,10 +131,10 @@ It's not fun just having one Apache site to work on. That's why god gave us virt
 
 I like to store my local sites underneath my main users Sites folder (~/Sites). Underneath this folder I create a folder called banana.dev, inside of which I place public, private and logs fodlers.
 
-{% highlight bash %}
+```bash
 $ banana.dev: ls
 logs private public
-{% endhighlight %}
+```
 
 
 - Public is where your site will be served from.
@@ -146,7 +146,7 @@ logs private public
 
 First of all, activate the Virtual Hosts portion of Apache.
 
-{% highlight apache %}
+```apache
 <virtualhost *:80="">
         ServerAdmin webmaster@banana.dev
         ServerName banana.dev
@@ -162,21 +162,21 @@ First of all, activate the Virtual Hosts portion of Apache.
         LogLevel warn
         ServerSignature On
 </virtualhost>
-{% endhighlight %}
+```
 
 ### Edit hosts file
 
 Edit your hosts file, so that your machine knows where to point the new address. (yes, there are ways of doing this in a more automated fashion. I think that's overkill for a local dev machine).
 
-{% highlight bash %}
+```bash
 sudo vim /etc/hosts
-{% endhighlight %}
+```
 
 Point the server name that you just created in your virtual host file to your localhost address:
 
-{% highlight bash %}
+```bash
 127.0.0.1  banana.dev
-{% endhighlight %}
+```
 
 ## Databases
 
@@ -184,7 +184,7 @@ Apple don't like including MySQL in OSX anymore, so you've gotta install it your
 
 It's a bit convoluted, because fuck you webdev, so take your time.
 
-{% highlight bash %}
+```bash
 brew install mysql
 unset TMPDIR
 mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
@@ -193,7 +193,7 @@ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 mysql.server start
 /usr/local/opt/mysql/bin/mysql_secure_installation
-{% endhighlight %}
+```
 
 ## Memcache
 
@@ -201,12 +201,12 @@ I rely on memcache a lot, as I work on some heavy-duty Drupal sites that simply 
 
 Yes, Drupal is terrible. Yes, it pays my wages. Shush.
 
-{% highlight bash %}
+```bash
 brew install php53-memcache
 brew install memcached
 ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist
-{% endhighlight %}
+```
 
 ## HTTPS
 
@@ -216,7 +216,7 @@ I have to test sites that require a user to log in over https. I used to simply 
 
 Run the following, choosing defaults for everything (including the passphrase - just press return!)
 
-{% highlight bash %}
+```bash
 openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
 
 openssl rsa -passin pass:x -in server.pass.key -out server.key
@@ -228,19 +228,19 @@ openssl req -new -key server.key -out server.csr
 openssl req -new -key server.key -out server.csr
 
 sudo mv server.* /etc/apache/
-{% endhighlight %}
+```
 
 ### Activate SSL support in Apache
 
-{% highlight bash %}
+```bash
 sudo vim /etc/apache2/httpd.conf
-{% endhighlight %}
+```
 
 Look for the line starting with:
 
-{% highlight bash %}
+```bash
 Include /private/etc/apache2/extra/httpd-vhosts.conf
-{% endhighlight %}
+```
 
 and uncomment it.
 
@@ -248,13 +248,13 @@ and uncomment it.
 
 This is just the same as your basic virtual host from earlier, except that we're also telling it to use port 443 and the SSL certificate that you just created.
 
-{% highlight bash %}
+```bash
 sudo vim /etc/apache2/extra/httpd-vhosts.conf
-{% endhighlight %}
+```
 
 Add the following to the end of the file, replacing the domain name and the path to your document root.
 
-{% highlight apache %}
+```apache
 <VirtualHost *:443>
         SSLEngine on
         ServerAdmin webmaster@banana.dev
@@ -276,7 +276,7 @@ Add the following to the end of the file, replacing the domain name and the path
 
 
 </VirtualHost>
-{% endhighlight %}
+```
 
 # And... relax
 

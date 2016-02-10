@@ -15,11 +15,11 @@ strapline: Visual Regression Testing becomes more important the more complex a p
 
 <p>In a fury you dig into the code to seek the cause of this living hell and  discover this atrocity at the end of your compiled CSS file:</p>
 
-{% highlight css %}
+```css
   div {
     padding: 5px;
   }
-{% endhighlight %}
+```
 
 <p>It really doesn't matter how it was added. A poorly scoped partial in Sass, a junior developer seeking to quick fix a problem or those darned magic space pixies in the server. The effect is the same: the padding of every &lt;div> on the website is changed to 5px.</p>
 
@@ -53,13 +53,13 @@ strapline: Visual Regression Testing becomes more important the more complex a p
 
 <p>Given a unique CSS selector, PhantomCSS will use the headless Webkit browser provided by PhantomJS to take a screenshot of the selector target. This is referred to as the <em>Baseline</em> screenshot. Let's pinch an example from the PhantomCSS documentation and take a screenshot of the following code:</p>
 
-{% highlight html %}
+```html
   <div class="machine" id="coffeemachine">
   <p>What would you like?</p>
   <button class="btn btn-large btn-primary" id="cappuccino-button" type="button">Cappuccino</button>
   <button class="btn btn-large btn-primary" id="espresso-button" type="button">Espresso</button>
   </div>
-{% endhighlight %}
+```
 
 <p>Here's the resulting snapshot:</p>
 
@@ -69,11 +69,11 @@ strapline: Visual Regression Testing becomes more important the more complex a p
 
 <p>Say another member of the team were to make a change to the ".machine" class, not realising that "#coffeemachine" depended upon ".machine" for most of its styling:</p>
 
-{% highlight css %}
+```css
   .machine {
     font-size: 110%;
   }
-{% endhighlight %}
+```
 
 <p>If this team member were to run PhantomCSS again (as part of their testing) they would get a great big stonking error alert in their console and the following diff image would be generated:</p>
 
@@ -90,25 +90,25 @@ strapline: Visual Regression Testing becomes more important the more complex a p
 <p>PhantomCSS depends on the PhantomJS engine, so you need to get that installed on your system. If you wish, you can download and install it <a href="http://phantomjs.org/download.html">manually</a>. But I'm lazy, and on my Mac I prefer to install things like this via <a href="http://brew.sh/">Homebrew</a>:</p>
 
 
-{% highlight bash %}
+```bash
   brew install casperjs
-{% endhighlight %}
+```
 
 <p>Carrying on the laziness theme, I'd recommend adding CasperJS and PhantomCSS libraries to your project via a project manager like npm or Bower. They're there to take the load off you, and it'll be easier to update them in the future. But you can do it manually, if you're into the kinky stuff.</p>
 
 <p><em>Grunt-phantomcss</em> is a lovely wrapper around PhantomCSS and lets us avoid the hassle of setting up links to PhantomCSS and CasperJS. I'm going to use it here, but it's not necessary. I like it because I've got the Grunt bug.</p>
 
-{% highlight bash %}
+```bash
 npm install grunt-phantomcss --save-dev
-{% endhighlight %}
+```
 
 <p>This will install CasperJS, PhantomCSS, grunt-phantomcss and all their dependencies as npm modules into our project directory and will update the <strong>package.json</strong> resource file appropriately.</p>
 
 <p>To finish up the installation, let's edit <strong>Gruntfile.js</strong> to tell Grunt to load the grunt-phantomcss task:</p>
 
-{% highlight javascript %}
+```javascript
 grunt.loadNpmTasks('grunt-phantomcss');
-{% endhighlight %}
+```
 
 <p>Yeah baby! Now we've got the engines and libraries installed we're ready to start using PhantomCSS!</p>
 
@@ -120,7 +120,7 @@ grunt.loadNpmTasks('grunt-phantomcss');
 <p>Firstly, we need something to test. This is a simple demo, so let's just use a single HTML page, with some inline CSS.</p>
 
 
-{% highlight html %}
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -140,7 +140,7 @@ grunt.loadNpmTasks('grunt-phantomcss');
   </body>
 </html>
 
-{% endhighlight %}
+```
 
 <p>The page should render like this in Chrome:</p>
 
@@ -150,7 +150,7 @@ grunt.loadNpmTasks('grunt-phantomcss');
 
 <p>Create a file called <strong>desktop.js</strong> (although this can be called whatever you want, as long as you reference it correctly). Populate it with the following:</p>
 
-{% highlight javascript %}
+```javascript
 var targeturi = 'http://locahost:4000'
 casper.start('targeturi');
 
@@ -159,7 +159,7 @@ casper.then(function(){
   var testsubject = '#aardvark';
   phantomcss.screenshot(testsubject, title);
 });
-{% endhighlight %}
+```
 
 <p>where:</p>
 
@@ -172,7 +172,7 @@ casper.then(function(){
 
 <p>That's your test written! But as we're using Grunt to control this test, we need to hook it up. In your <strong>Gruntfile.js</strong>, add the following <a href="http://gruntjs.com/configuring-tasks">config options</a>:</p>
 
-{% highlight javascript %}
+```javascript
 phantomcss: {
   desktop: {
     options: {
@@ -183,7 +183,7 @@ phantomcss: {
     src: ['caspertests.js']
   }
 },
-{% endhighlight %}
+```
 
 <p>What we've done here is tell Grunt to create a main PhantomCSS task, with a "desktop" subtask inside that, and to supply both with a bunch of config options. As normal with Grunt, we can extend this any number of subtasks, all of which you can access via <strong>"grunt taskname:subtaskname"</strong>. Very useful for testing different viewport sizes!</p>
 
@@ -203,9 +203,9 @@ phantomcss: {
 
 <p>Excited? Tell Grunt to kick off the PhantomCSS desktop task by running the following in the project directory:</p>
 
-{% highlight bash %}
+```bash
 grunt phantomcss:desktop
-{% endhighlight %}
+```
 
 <p>Boop.</p>
 
@@ -227,11 +227,11 @@ grunt phantomcss:desktop
 
 <p>If you were to run these tests over and over again, they'd just keep passing. So let's mix things up a bit and make a change to the styling of the test subject:</p>
 
-{% highlight css %}
+```css
 #aardvark {
   width: 300px;
 }
-{% endhighlight %}
+```
 
 <p>If we reload the test subject page in a browser, we can see that the div is now wider than before.</p>
 
@@ -304,11 +304,11 @@ grunt phantomcss:desktop
 
 <p>Examples of each component should be isolated, and wrapped in their own unique selector. I use the following format:</p>
 
-{% highlight html %}
+```html
  <div id="testsubject-COMPONENTNAMEHERE" class="testsubject">
    ... component lives here ...
  </div>
-{% endhighlight %}
+```
 
 <p>Whatever you end up using, keep it consistent and obvious. You should be able to guess what a component name will be when you come to reference it later.</p>
 
@@ -326,7 +326,7 @@ grunt phantomcss:desktop
 
 <p>Say we have the following tests:</p>
 
-{% highlight javascript %}
+```javascript
 
 casper.then(function(){
   var title = 'aardvark';
@@ -351,7 +351,7 @@ casper.then(function(){
   var testsubject = '#testsubject-donkey';
   phantomcss.screenshot(testsubject, title);
 });
-{% endhighlight %}
+```
 
 <p>These would generate the following baseline files:</p>
 
@@ -365,7 +365,7 @@ casper.then(function(){
 
 <p>But if we now try altering the order of our tests, swapping Aardvark to the end:</p>
 
-{% highlight javascript %}
+```javascript
 casper.then(function(){
   var title = 'bison';
   var testsubject = '#testsubject-bison';
@@ -390,7 +390,7 @@ casper.then(function(){
   phantomcss.screenshot(testsubject, title);
 });
 
-{% endhighlight %}
+```
 
 <p>then we get the following outputted:</p>
 
