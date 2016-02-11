@@ -146,7 +146,7 @@ logs private public
 
 First of all, activate the Virtual Hosts portion of Apache.
 
-```apache
+```ApacheConf
 <virtualhost *:80="">
         ServerAdmin webmaster@banana.dev
         ServerName banana.dev
@@ -254,7 +254,7 @@ sudo vim /etc/apache2/extra/httpd-vhosts.conf
 
 Add the following to the end of the file, replacing the domain name and the path to your document root.
 
-```apache
+```ApacheConf
 <VirtualHost *:443>
         SSLEngine on
         ServerAdmin webmaster@banana.dev
