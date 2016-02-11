@@ -10,5 +10,13 @@ title: sonniesedge
 email: charlie@sonniesedge.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   Sonniesedge writes things for the love of it.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sonniesedge.co.uk" # the base hostname & protocol for your site
 twitter_username: sonniesedge
 github_username:  sonniesedge
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
