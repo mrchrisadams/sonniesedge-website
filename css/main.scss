@@ -35,6 +35,7 @@
 // COMPONENTS
 // Discrete, complete chunks of UI (e.g. .carousel {}). Cosmetically-designed components. This is the one layer that inuitcss doesn’t get involved with.
 @import 'components/site-title';
+@import 'components/site-nav';
 @import 'components/post-header';
 @import 'components/button';
 @import 'components/teaser';
