@@ -1,0 +1,14 @@
+.teaser-list {
+  @include reset-list;
+}
+
+.teaser {
+  border: 1px solid $color-light-grey;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.teaser__link {
+  @include naked-link;
+  @include camoflaged-link;
+}

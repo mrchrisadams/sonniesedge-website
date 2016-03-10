@@ -2,5 +2,9 @@
   @include naked-link;
   @include camoflaged-link;
   font-family: $font-family-header;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
 }
