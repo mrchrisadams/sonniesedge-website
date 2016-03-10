@@ -1,0 +1,4 @@
+.btn {
+  @include button;
+  border-color: $color-light-grey;
+}

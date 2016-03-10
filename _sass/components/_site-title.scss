@@ -1,0 +1,6 @@
+.site-title {
+  @include naked-link;
+  @include camoflaged-link;
+  font-family: $font-family-header;
+  font-size: 2rem;
+}

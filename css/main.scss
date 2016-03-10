@@ -1,53 +1,48 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+
+// SETTINGS
+// Global variables, site-wide settings, config switches, etc.
+@import 'settings/colors';
+@import 'settings/typography';
 
 
-
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+// TOOLS
+// Site-wide mixins and functions.
 
 
+// GENERIC
+// Low-specificity, far-reaching rulesets (e.g. resets, normalise.css, box-sizing).
+@import 'generic/reset';
+@import 'generic/box-sizing';
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
+// BASE
+// Unclassed HTML elements (Directly selects element typs e.g. a {}, blockquote {}, address {}).
+@import 'base/images';
+@import 'base/typography';
 
+// OBJECTS
+// Objects, abstractions, and design patterns (e.g. .media {}). Cosmetic-free.
+@import 'objects/slimfast';
+@import 'objects/button';
+@import 'objects/links';
+@import 'objects/flex';
+@import 'objects/divider';
+@import 'objects/inline-list';
+
+// COMPONENTS
+// Discrete, complete chunks of UI (e.g. .carousel {}). Cosmetically-designed components. This is the one layer that inuitcss doesn’t get involved with.
+@import 'components/site-title';
+@import 'components/post-header';
+@import 'components/button';
+
+// TRUMPS
+// High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+@import 'trumps/typography';
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import 'base';
+@import 'layout';
+@import 'syntax-highlighting';

@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Blog posts
+title: Blog
 permalink: /blog/
 inverse: false
+menu: main
 background: photo-1429305336325-b84ace7eba3b.jpg
 ---
 
