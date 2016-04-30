@@ -4,8 +4,8 @@
 
 .teaser {
   border: 1px solid $color-light-grey;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  padding: $unit-padding;
+  margin-bottom: $unit-padding;
 }
 
 .teaser__link {
