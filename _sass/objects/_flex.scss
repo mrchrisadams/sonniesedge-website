@@ -1,0 +1,12 @@
+.flex {
+  @include flexbox();
+  @include align-items(center);
+}
+
+.flex__item {
+  @include flex(1, 0, auto);
+}
+
+.flex__item--right {
+
+}
