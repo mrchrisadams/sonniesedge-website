@@ -7,6 +7,8 @@ background: 5166150953_ed4d217f18_o.jpg
 strapline: The way we use Twitter isn't accessible for everyone
 ---
 
+*UPDATE: March 29 2016. [Twitter have announced](https://blog.twitter.com/2016/accessible-images-for-everyone) that they will support a limited amount of alt text on images posted to twitter. Unfortunately they will not be enforcing alt text or using AI to determine what is in an image.*
+
 I just switched to using a command-line Twitter client and I was again reminded about how limiting it is to use Twitter when you cannot see the images contained in a tweet.
 
 <img src="/images/posts/twitter-accessibility/twitter_pixelated.png" alt="Screenshot of my twitter client, Rainbowstream" />
