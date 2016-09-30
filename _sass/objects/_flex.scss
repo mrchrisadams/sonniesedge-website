@@ -3,6 +3,10 @@
   @include align-items(center);
 }
 
+.flex--wrap {
+  @include flex-wrap(wrap);
+}
+
 .flex__item {
   @include flex(1, 0, auto);
 }
