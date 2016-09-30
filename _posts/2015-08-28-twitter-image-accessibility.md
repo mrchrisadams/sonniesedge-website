@@ -33,10 +33,7 @@ I know Twitter itself is rubbish and halts attempts at accessibility. It's crimi
 
 ## Top tips
 
-* You can still use images, even for screencaps - just *provide an alternative*.
-
-* If you're posting images of text, then also put a copy on a Github Gist: https://gist.githubusercontent.com/SonniesEdge/6c0edb64969f94c4bf0c/raw
-
-* If you're linking to a series of tweets, then also Storify them and link to that.
-
-* If you're posting a photo, try and describe it in the text, or make your tweet work *without* having to see the image.
+- You can still use images, even for screencaps - just *provide an alternative*.
+- If you're posting images of text, then also put a copy on a Github Gist: https://gist.githubusercontent.com/SonniesEdge/6c0edb64969f94c4bf0c/raw
+- If you're linking to a series of tweets, then also Storify them and link to that.
+- If you're posting a photo, try and describe it in the text, or make your tweet work *without* having to see the image.

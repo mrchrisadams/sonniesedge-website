@@ -23,3 +23,5 @@ kramdown:
   syntax_highlighter: rouge
 
 permalink: /blog/:title
+
+exclude: ['node_modules', 'package.json', 'gulpfile.js', 'Gemfile.lock']
