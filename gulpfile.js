@@ -17,10 +17,10 @@ var messages = {
 };
 
 gulp.task('sass-dev', function() {
-  console.log("sass dev");
   return gulp.src(sassMain)
     .pipe(sass({
-      onError: browserSync.notify
+      onError: browserSync.notify,
+      includePaths: ['node_modules/csslibrary/assets'],
     }))
     .pipe(prefix(['last 2 versions'], { cascade: true }))
     .pipe(gulp.dest('_site/assets'))

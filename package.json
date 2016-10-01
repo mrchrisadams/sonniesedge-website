@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SonniesEdge/sonniesedge.github.io",
   "devDependencies": {
     "browser-sync": "^2.16.1",
+    "csslibrary": "gitlab:sonniesedge/css-library#master",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.0",
