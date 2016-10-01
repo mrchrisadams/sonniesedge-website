@@ -6,6 +6,7 @@ var cssnano     = require('gulp-cssnano');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var cp          = require('child_process');
+var ghPages = require('gulp-gh-pages');
 
 var sassMain = '_sass/main.scss';
 var sassDir = '_sass/**/*.scss';
@@ -16,13 +17,25 @@ var messages = {
 };
 
 gulp.task('sass-dev', function() {
-  gulp.src(sassMain)
+  console.log("sass dev");
+  return gulp.src(sassMain)
     .pipe(sass({
       onError: browserSync.notify
     }))
     .pipe(prefix(['last 2 versions'], { cascade: true }))
     .pipe(gulp.dest('_site/assets'))
     .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('assets'));
+});
+
+gulp.task('sass-prod', function () {
+  return gulp.src(sassMain)
+    .pipe(sass({
+      onError: browserSync.notify
+    }))
+    .pipe(prefix(['last 2 versions'], { cascade: true }))
+    .pipe(cssnano())
+    .pipe(gulp.dest('_site/assets'))
     .pipe(gulp.dest('assets'));
 });
 
@@ -49,9 +62,18 @@ gulp.task('browser-sync', ['sass-dev', 'jekyll-dev'], function() {
   });
 });
 
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('_site/**/*')
+    .pipe(ghPages({
+      remoteUrl: 'git@github.com:SonniesEdge/sonniesedge.github.io.git',
+      branch: 'master'
+    }));
+});
+
 gulp.task('watch', function() {
   gulp.watch(sassDir, ['sass-dev', 'jekyll-rebuild']);
   gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('build', ['sass-prod', 'jekyll-prod']);
