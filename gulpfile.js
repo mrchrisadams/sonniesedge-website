@@ -20,7 +20,7 @@ gulp.task('sass-dev', function() {
   return gulp.src(sassMain)
     .pipe(sass({
       onError: browserSync.notify,
-      includePaths: ['node_modules/csslibrary/assets'],
+      includePaths: ['node_modules/csslibrary/assets']
     }))
     .pipe(prefix(['last 2 versions'], { cascade: true }))
     .pipe(gulp.dest('_site/assets'))
@@ -31,7 +31,8 @@ gulp.task('sass-dev', function() {
 gulp.task('sass-prod', function () {
   return gulp.src(sassMain)
     .pipe(sass({
-      onError: browserSync.notify
+      onError: browserSync.notify,
+      includePaths: ['node_modules/csslibrary/assets']
     }))
     .pipe(prefix(['last 2 versions'], { cascade: true }))
     .pipe(cssnano())
