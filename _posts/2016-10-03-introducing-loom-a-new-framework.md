@@ -15,7 +15,7 @@ Think large, and swing hard, you know?
 
 # Introducing Loom
 
-Loom is a Sass framework for producing your own pattern libraries. It's still in alpha, but already it provides a series of OOCSS bricks, mixins, functions and classes that allow you to quickly put together a pattern library of your own, ready to use on a real website. Aimed at professional web developers, it aims to make your life _easier_.
+[Loom](https://github.com/sonniesedge/loom) is a Sass framework for producing your own pattern libraries. It's still in alpha, but already it provides a series of OOCSS bricks, mixins, functions and classes that allow you to quickly put together a pattern library of your own, ready to use on a real website. Aimed at professional web developers, it aims to make your life _easier_.
 
 It's designed to be light, flexible, modular and just enough opinions to ensure that it runs smoothly.
 
@@ -25,7 +25,7 @@ Oh, it was partly for the fun, but mainly because I wanted to produce something 
 
 # Architecture
 
-Loom is written in Sass and is based upon the ITCSS layered architecture. It uses BEM for its (optional) object and utility classes. It's deliberately written in a way that discourages Sass nesting and avoids CSS specificity battles, by returning to source order as the way of describing specificity. This makes it perfect for use in multi-developer teams where the threat of "just add a multi-level selector to the end of the stylesheet to make it work" is ever present.
+[Loom](https://github.com/sonniesedge/loom) is written in Sass and is based upon the ITCSS layered architecture. It uses BEM for its (optional) object and utility classes. It's deliberately written in a way that discourages Sass nesting and avoids CSS specificity battles, by returning to source order as the way of describing specificity. This makes it perfect for use in multi-developer teams where the threat of "just add a multi-level selector to the end of the stylesheet to make it work" is ever present.
 
 # Why use it?
 
@@ -36,7 +36,7 @@ Loom is grounded in [Design System thinking](http://atomicdesign.bradfrost.com/c
 The framework knows about design systems, and so comes pre-equpped with variables, mixins and functions that can be used to extract standard thematic elements for your site. Annoyed by developers using `color: #52BE80` in the middle of a class? Well now you can encourage them to use `color: get-color(brand-green)` instead, and keep things clean.
 
 # How do you use it?
-There's two ways of using Loom. You can use the (entirely optional) Object and Utility classes to quickly scaffold out a site.
+There's two ways of using [Loom](https://github.com/sonniesedge/loom). You can use the (entirely optional) Object and Utility classes to quickly scaffold out a site.
 
 ```html
   <header class="o-container">
@@ -84,3 +84,6 @@ The outputted visual components are perfect for integrating with pattern library
 # Fully documented
 
 Loom is fully documented, using [SassDoc](http://sassdoc.com/). You can look through the included documentation to see what variables, functions and mixins are available out of the box.
+
+# Take a look
+You can [find Loom on Github](https://github.com/sonniesedge/loom). Please feel free to take a look and start trying it out. I'm really happy to hear suggestions and ideas!
