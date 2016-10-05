@@ -58,8 +58,14 @@ gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
 
 gulp.task('browser-sync', ['sass-dev', 'jekyll-dev'], function() {
   browserSync.init({
-    server: "_site",
-    port: 1234
+    server: {
+      baseDir: "_site",
+      serveStaticOptions: {
+        extensions: ['html']
+      },
+      port: 1234
+    }
+
   });
 });
 
