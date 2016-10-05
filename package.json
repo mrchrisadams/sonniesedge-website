@@ -18,13 +18,13 @@
   "homepage": "https://github.com/SonniesEdge/sonniesedge.github.io",
   "devDependencies": {
     "browser-sync": "^2.16.1",
-    "csslibrary": "gitlab:sonniesedge/css-library#master",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "loomcss": "^1.0.0"
   }
 }
