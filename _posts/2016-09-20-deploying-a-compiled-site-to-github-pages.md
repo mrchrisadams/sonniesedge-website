@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Deploying a compiled site to a personal Github Pages account"
-date:   2016-09-30 17:57:00
+date:   2016-09-20 17:57:00
 strapline: Personal Github Pages only allow either static sites or Jekyll as a source, not both.
 ---
 
