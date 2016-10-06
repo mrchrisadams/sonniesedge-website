@@ -1,0 +1,15 @@
+// --- FONT FAMILIES ---
+$LOOM-font-family-sans: "Open Sans", sans-serif !default;
+$LOOM-font-family-arvo: Arvo !default;
+$LOOM-font-family-opensans: "Open sans" !default;
+
+$LOOM-fonts: (
+  'primary': (
+    'default': $LOOM-font-family-sans,
+    'webfont': $LOOM-font-family-sans
+  ),
+  'secondary': (
+    'default': $LOOM-font-family-sans,
+    'webfont': $LOOM-font-family-sans
+  )
+) !default;

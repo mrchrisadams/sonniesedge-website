@@ -1,49 +1,69 @@
-@import 'loom/10-global-settings/misc';
-
 // SETTINGS
-// Global variables, site-wide settings, config switches, etc.
-@import 'settings/colors';
-@import 'settings/typography';
-@import 'settings/units';
+
+@import '10-settings/misc';
+@import 'loom/10-global-settings/misc';
+@import 'loom/10-global-settings/typography';
+@import 'loom/10-global-settings/color';
+@import 'loom/10-global-settings/breakpoints';
+@import 'loom/10-global-settings/spacing';
+@import 'loom/10-global-settings/box-sizing';
+@import 'loom/10-global-settings/icons';
 
 // TOOLS
-// Site-wide mixins and functions.
-@import 'tools/flexbox';
+@import 'loom/20-tools/misc';
+@import 'loom/20-tools/type-checking';
+@import 'loom/20-tools/typography';
+@import 'loom/20-tools/mq';
+@import 'loom/20-tools/spacing';
+@import 'loom/20-tools/color';
+@import 'loom/20-tools/transition';
+@import 'loom/20-tools/z-index';
+@import 'loom/20-tools/grid-columns';
+@import 'loom/20-tools/icons';
 
 // GENERIC
-// Low-specificity, far-reaching rulesets (e.g. resets, normalise.css, box-sizing).
-@import 'generic/reset';
-@import 'generic/box-sizing';
+@import 'loom/30-generic/box-sizing';
+@import 'loom/30-generic/normalize';
+@import '30-generic/syntax-highlighting';
 
-// BASE
-// Unclassed HTML elements (Directly selects element typs e.g. a {}, blockquote {}, address {}).
-@import 'base/images';
-@import 'base/typography';
+// BASE ELEMENTS
+@import 'loom/40-base-elements/images';
+@import 'loom/40-base-elements/typography';
+@import 'loom/40-base-elements/form-items';
+
+// LAYOUT
+@import 'loom/50-layout/grid';
 
 // OBJECTS
-// Objects, abstractions, and design patterns (e.g. .media {}). Cosmetic-free.
-@import 'objects/slimfast';
-@import 'objects/button';
-@import 'objects/links';
-@import 'objects/flex';
-@import 'objects/divider';
-@import 'objects/inline-list';
-@import 'objects/reset-list';
+@import 'loom/60-objects/headings';
+@import 'loom/60-objects/list-reset';
+@import 'loom/60-objects/icon';
+@import 'loom/60-objects/button';
+@import 'loom/60-objects/absolute-center';
+@import 'loom/60-objects/absolute-cover';
+@import 'loom/60-objects/clearfix';
+@import 'loom/60-objects/fixed-ratio';
+@import 'loom/60-objects/vertical-center';
+@import 'loom/60-objects/media';
+@import 'loom/60-objects/hide-visually';
+@import 'loom/60-objects/container';
+@import 'loom/60-objects/list-inline';
 
-// COMPONENTS
-// Discrete, complete chunks of UI (e.g. .carousel {}). Cosmetically-designed components. This is the one layer that inuitcss doesn’t get involved with.
-@import 'components/site-title';
-@import 'components/site-nav';
-@import 'components/post-header';
-@import 'components/button';
-@import 'components/teaser';
+// UI COMPONENTS
+@import '70-ui-components/meta';
+
+// UTILITIES
+@import 'loom/80-utilities/background-color';
+@import 'loom/80-utilities/vertical-align';
+@import 'loom/80-utilities/text-transform';
+@import 'loom/80-utilities/text-align';
+@import 'loom/80-utilities/position';
+@import 'loom/80-utilities/font-style';
+@import 'loom/80-utilities/display';
+@import 'loom/80-utilities/font-size';
+@import 'loom/80-utilities/display-none';
+@import 'loom/80-utilities/margin';
+@import 'loom/80-utilities/padding';
+@import 'loom/80-utilities/white-space';
 
 // TRUMPS
-// High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
-@import 'trumps/typography';
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import 'base';
-@import 'layout';
-@import 'syntax-highlighting';
