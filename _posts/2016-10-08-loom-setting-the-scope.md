@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Setting the scope for Loom
-date:   2016-10-01 13:30:00
+date:   2016-10-08 13:30:00
 strapline: First in a series of posts on learning to write Loom, a new Sass framework
 ---
 
@@ -39,3 +39,7 @@ After looking at these manifesto points it became so much easier to decide on th
 - I wanted to make sure everything would be modular. I think this came naturally from wanting to use ITCSS - it's designed to allow the insertion or modification of modules and layers, and is what drew me to it initially.
 - I wanted it to be documented. There's nothing more frustrating than a framework that you don't have full information for. I'd always wanted to use SassDocs so I went for that.
 - Because of my design system love, I wanted to get that incorporated from the start. That meant everything should be standardised into Sass variables where possible.
+
+# So what next?
+
+That set the scope for what I wanted to achieve, but comes after that? Check back soon for the next part, "Organizing the Code".

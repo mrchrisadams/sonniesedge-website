@@ -5,7 +5,7 @@ date:   2016-10-01 13:30:00
 strapline: You get these grand ideas and it all goes nonlinear from there.
 ---
 
-## Figure your scope
+## Define your scope
 I kept breaking out of my assigned aim of a Sass/CSS library. I don't want to start handling the JS side of things - that's for bootstrap and the like. This is an in-house CSS library generator.
 
 
