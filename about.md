@@ -15,9 +15,9 @@ I'm a late entrant into the web game, having only started as a web developer in 
 I speak at events, write about the web and am generally considered pretty darned good at what I do. I'm currently at Bitcrowd GmbH in Berlin, and was previously at BBC News, where I was responsible for building the 2015 General Election site.
 
 ## Personal
-If you define me as a *person* and by my life outside work, then I'm a [horse riding](/about/horseriding/), [photography-taking](https://flickr.com/photos/sonniesedge), bike riding, beer drinking, feminist leftie; a strawberry-blonde gay woman, with her head always buried in a book.
+If you define me as a *person* and by my life outside work, then I'm a [horse riding](/about/horseriding), [photography-taking](https://flickr.com/photos/sonniesedge), bike riding, beer drinking, feminist leftie; a strawberry-blonde gay woman, with her head always buried in a book.
 
-Oh, and I moved from [London to Berlin](/blog/berlin/) recently, so check up on that.
+Oh, and I moved from [London to Berlin](/blog/berlin) recently, so check up on that.
 
 Bonus fact: I have voluntary control of my [tensor tympani muscles](http://en.m.wikipedia.org/wiki/Tensor_tympani_muscle).
 

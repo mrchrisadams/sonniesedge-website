@@ -34,8 +34,8 @@ After looking at these manifesto points it became so much easier to decide on th
 
 - I didn't want to offer something themed. There's a multitude of <strike>Wordpress themes</strike> pattern libraries already out there that do that. I wanted a loose collection of objects and utilities to help others build a pattern library.
 - I definitely wanted to use ITCSS, right from the start. It allows enormous flexibility for structuring code while avoiding specificity wars. It's not documented very well, but I could address that in the framework documentation.
-- I wanted to let the consumer decide if they want to output chunky component or lighter utility classes. I can't say I like using utility classes, but I can see the value.
+- I wanted to let the consumer decide if they want to output chunky components or lighter utility classes. I can't say I prefer using utility classes, but I can utterly see the value.
 - I wanted to use BEM of for naming. But I was still unsure at this initial point about if I wanted to force this on end users.
-- I wanted to make sure everything would be modular. I think this came naturally from wanting to use ITCSS. It's designed to allow the insertion or modification of modules and layers, and is what drew me to it initially.
+- I wanted to make sure everything would be modular. I think this came naturally from wanting to use ITCSS - it's designed to allow the insertion or modification of modules and layers, and is what drew me to it initially.
 - I wanted it to be documented. There's nothing more frustrating than a framework that you don't have full information for. I'd always wanted to use SassDocs so I went for that.
 - Because of my design system love, I wanted to get that incorporated from the start. That meant everything should be standardised into Sass variables where possible.
