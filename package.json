@@ -1,7 +1,7 @@
 {
   "name": "sonniesedge.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "The website source for https://sonniesedge.co.uk",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,6 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
-    "loomcss": "^1.0.0"
+    "loomcss": "*"
   }
 }
