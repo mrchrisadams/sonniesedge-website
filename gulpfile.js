@@ -8,6 +8,9 @@ var uglify      = require('gulp-uglify');
 var cp          = require('child_process');
 var ghPages = require('gulp-gh-pages');
 
+var gulp = require('gulp');
+var babel = require('gulp-babel');
+
 var sassMain = '_sass/main.scss';
 var sassDir = '_sass/**/*.scss';
 
@@ -52,6 +55,14 @@ gulp.task('jekyll-prod', function (done) {
   .on('close', done);
 });
 
+gulp.task('js', function() {
+  return gulp.src('rss.js')
+    .pipe(babel({
+        presets: ['es2015']
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
   browserSync.reload();
 });
@@ -80,7 +91,9 @@ gulp.task('deploy', ['build'], function() {
 gulp.task('watch', function() {
   gulp.watch(sassDir, ['sass-dev', 'jekyll-rebuild']);
   gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
+  gulp.watch('rss.js', ['js', 'jekyll-rebuild']);
+
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('build', ['sass-prod', 'jekyll-prod']);
+gulp.task('build', ['js', 'sass-prod', 'jekyll-prod']);
