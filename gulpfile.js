@@ -23,7 +23,7 @@ gulp.task('sass-dev', function() {
   return gulp.src(sassMain)
     .pipe(sass({
       onError: browserSync.notify,
-      includePaths: ['node_modules/csslibrary/assets']
+      includePaths: ['node_modules/loomcss/assets']
     }))
     .pipe(prefix(['last 2 versions'], { cascade: true }))
     .pipe(gulp.dest('_site/assets'))
