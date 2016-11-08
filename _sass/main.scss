@@ -1,69 +1,43 @@
 // SETTINGS
-
 @import '10-settings/misc';
-@import 'loom/10-global-settings/misc';
-@import 'loom/10-global-settings/typography';
-@import 'loom/10-global-settings/color';
-@import 'loom/10-global-settings/breakpoints';
-@import 'loom/10-global-settings/spacing';
-@import 'loom/10-global-settings/box-sizing';
-@import 'loom/10-global-settings/icons';
+// ----->  ADD YOUR OWN SETTINGS HERE! :D
+@import 'loom/10-global-settings';
+// NOOOO! DON'T YOUR OWN SETTINGS AT THE END! :( SEE THE TEXT ABOVE!
 
 // TOOLS
-@import 'loom/20-tools/misc';
-@import 'loom/20-tools/type-checking';
-@import 'loom/20-tools/typography';
-@import 'loom/20-tools/mq';
-@import 'loom/20-tools/spacing';
-@import 'loom/20-tools/color';
-@import 'loom/20-tools/transition';
-@import 'loom/20-tools/z-index';
-@import 'loom/20-tools/grid-columns';
-@import 'loom/20-tools/icons';
+@import 'loom/20-tools';
+// -----> ADD YOUR OWN TOOLS HERE! :D
 
 // GENERIC
-@import 'loom/30-generic/box-sizing';
-@import 'loom/30-generic/normalize';
+@import 'loom/30-generic';
+// -----> ADD YOUR OWN GENERIC STYLES HERE! :D
 @import '30-generic/syntax-highlighting';
 
 // BASE ELEMENTS
-@import 'loom/40-base-elements/images';
-@import 'loom/40-base-elements/typography';
-@import 'loom/40-base-elements/form-items';
+@import '40-base-elements/typography';
+@import 'loom/40-base-elements';
+// -----> ADD YOUR OWN BASE ELEMENTS HERE! :D
 
 // LAYOUT
-@import 'loom/50-layout/grid';
+@import 'loom/50-layout';
+// -----> ADD YOUR OWN LAYOUT ENGINES HERE! :D
 
 // OBJECTS
-@import 'loom/60-objects/headings';
-@import 'loom/60-objects/list-reset';
-@import 'loom/60-objects/icon';
-@import 'loom/60-objects/button';
-@import 'loom/60-objects/absolute-center';
-@import 'loom/60-objects/absolute-cover';
-@import 'loom/60-objects/clearfix';
-@import 'loom/60-objects/fixed-ratio';
-@import 'loom/60-objects/vertical-center';
-@import 'loom/60-objects/media';
-@import 'loom/60-objects/hide-visually';
-@import 'loom/60-objects/container';
-@import 'loom/60-objects/list-inline';
+@import 'loom/60-objects';
+// -----> ADD YOUR OWN OBJECTS HERE! :D
 
 // UI COMPONENTS
 @import '70-ui-components/meta';
+@import '70-ui-components/logo';
+@import '70-ui-components/nav-button';
+@import '70-ui-components/nav-list';
+@import '70-ui-components/lede';
+@import '70-ui-components/page-header';
 
 // UTILITIES
-@import 'loom/80-utilities/background-color';
-@import 'loom/80-utilities/vertical-align';
-@import 'loom/80-utilities/text-transform';
-@import 'loom/80-utilities/text-align';
-@import 'loom/80-utilities/position';
-@import 'loom/80-utilities/font-style';
-@import 'loom/80-utilities/display';
-@import 'loom/80-utilities/font-size';
-@import 'loom/80-utilities/display-none';
-@import 'loom/80-utilities/margin';
-@import 'loom/80-utilities/padding';
-@import 'loom/80-utilities/white-space';
+@import 'loom/80-utilities';
+// -----> ADD YOUR OWN UTILITIES HERE! :D
+@import '80-utilities/border';
 
 // TRUMPS
+// -----> ADD YOUR OWN TRUMPS HERE! :D
