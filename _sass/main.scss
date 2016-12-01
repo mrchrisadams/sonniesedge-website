@@ -1,49 +1,43 @@
-@import 'loom/10-global-settings/misc';
-
 // SETTINGS
-// Global variables, site-wide settings, config switches, etc.
-@import 'settings/colors';
-@import 'settings/typography';
-@import 'settings/units';
+@import '10-settings/misc';
+// ----->  ADD YOUR OWN SETTINGS HERE! :D
+@import 'loom/10-global-settings';
+// NOOOO! DON'T YOUR OWN SETTINGS AT THE END! :( SEE THE TEXT ABOVE!
 
 // TOOLS
-// Site-wide mixins and functions.
-@import 'tools/flexbox';
+@import 'loom/20-tools';
+// -----> ADD YOUR OWN TOOLS HERE! :D
 
 // GENERIC
-// Low-specificity, far-reaching rulesets (e.g. resets, normalise.css, box-sizing).
-@import 'generic/reset';
-@import 'generic/box-sizing';
+@import 'loom/30-generic';
+// -----> ADD YOUR OWN GENERIC STYLES HERE! :D
+@import '30-generic/syntax-highlighting';
 
-// BASE
-// Unclassed HTML elements (Directly selects element typs e.g. a {}, blockquote {}, address {}).
-@import 'base/images';
-@import 'base/typography';
+// BASE ELEMENTS
+@import '40-base-elements/typography';
+@import 'loom/40-base-elements';
+// -----> ADD YOUR OWN BASE ELEMENTS HERE! :D
+
+// LAYOUT
+@import 'loom/50-layout';
+// -----> ADD YOUR OWN LAYOUT ENGINES HERE! :D
 
 // OBJECTS
-// Objects, abstractions, and design patterns (e.g. .media {}). Cosmetic-free.
-@import 'objects/slimfast';
-@import 'objects/button';
-@import 'objects/links';
-@import 'objects/flex';
-@import 'objects/divider';
-@import 'objects/inline-list';
-@import 'objects/reset-list';
+@import 'loom/60-objects';
+// -----> ADD YOUR OWN OBJECTS HERE! :D
 
-// COMPONENTS
-// Discrete, complete chunks of UI (e.g. .carousel {}). Cosmetically-designed components. This is the one layer that inuitcss doesn’t get involved with.
-@import 'components/site-title';
-@import 'components/site-nav';
-@import 'components/post-header';
-@import 'components/button';
-@import 'components/teaser';
+// UI COMPONENTS
+@import '70-ui-components/meta';
+@import '70-ui-components/logo';
+@import '70-ui-components/nav-button';
+@import '70-ui-components/nav-list';
+@import '70-ui-components/lede';
+@import '70-ui-components/page-header';
+
+// UTILITIES
+@import 'loom/80-utilities';
+// -----> ADD YOUR OWN UTILITIES HERE! :D
+@import '80-utilities/border';
 
 // TRUMPS
-// High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
-@import 'trumps/typography';
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import 'base';
-@import 'layout';
-@import 'syntax-highlighting';
+// -----> ADD YOUR OWN TRUMPS HERE! :D

@@ -41,4 +41,8 @@ $ npm version patch
 
 and I get a whole new published package, a commit in git and a new release tag.
 
-[Oberaffengeil](https://www.youtube.com/watch?v=AX0X-s2wuaU)! 
+[Oberaffengeil](https://www.youtube.com/watch?v=AX0X-s2wuaU)!
+
+<div class="o-fixed-ratio">
+  <iframe class="o-fixed-ratio__inner" allowfullscreen="0" scrolling="no" width="788" height="443" frameborder="0" src="https://www.youtube.com/embed/AX0X-s2wuaU?autoplay=0"></iframe>
+</div>

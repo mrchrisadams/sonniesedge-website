@@ -43,6 +43,22 @@ gulp.task('sass-prod', function () {
     .pipe(gulp.dest('assets'));
 });
 
+gulp.task('scripts-dev', function() {
+  return gulp.src(['_js/lib/*.js'])
+  .pipe(concat('scripts.js'))
+  .pipe(gulp.dest('_site/js'))
+  .pipe(browserSync.reload({stream:true}))
+  .pipe(gulp.dest('js'));;
+});
+
+gulp.task('scripts-prod', function() {
+  return gulp.src(['_js/lib/*.js'])
+  .pipe(concat('scripts.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('_site/js'))
+  .pipe(gulp.dest('js'));;
+});
+
 gulp.task('jekyll-dev', function (done) {
   browserSync.notify(messages.jekyllDev);
   return cp.spawn('jekyll', ['build', '--drafts', '--config', '_config.yml'], {stdio: 'inherit'})
@@ -90,9 +106,8 @@ gulp.task('deploy', ['build'], function() {
 
 gulp.task('watch', function() {
   gulp.watch(sassDir, ['sass-dev', 'jekyll-rebuild']);
-  gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
+  gulp.watch(['index.html', './*.md', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
   gulp.watch('rss.js', ['js', 'jekyll-rebuild']);
-
 });
 
 gulp.task('default', ['browser-sync', 'watch']);

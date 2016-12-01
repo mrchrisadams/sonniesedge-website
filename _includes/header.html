@@ -1,17 +1,19 @@
-<header class="site-header wrapper">
+<header class="site-header o-container">
 
-    <nav class="site-nav flex flex--wrap">
-      <div class="flex__item">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <nav class="site-nav l-grid l-grid--align-items-center">
+      <div class="l-grid__item l-col-4-of-12@medium">
+        <a class="c-logo" href="{{ site.baseurl }}/">
+          sonniesedge
+        </a>
       </div>
 
-      <div class="flex__item">
-        <ul class="inline-list">
+      <div class="l-grid__item l-col-8-of-12@medium">
+        <ul class="o-list-reset c-nav-list">
           {% assign pages = site.pages | sort: 'weight' %}
           {% for p in pages %}
             {% if p.menu == 'main' %}
-              <li class="inline-list__item">
-                 <a class="btn" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+              <li class="c-nav-list__item">
+                 <a class="c-nav-button" href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
               </li>
             {% endif %}
           {% endfor %}
