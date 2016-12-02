@@ -1,3 +1,9 @@
 $LOOM-a-color: get-color(pink);
 $LOOM-a-color-visited: get-color(pink);
 $LOOM-a-color-hoverfocus: get-color(pink);
+
+blockquote {
+  border-left: get-spacing(xsmall) solid get-color(gray);
+  margin-left: get-spacing(xsmall);
+  padding-left: get-spacing(xsmall);
+}
