@@ -12,7 +12,7 @@ If you define me by how I sell my labour, then I'm a front-end web developer, sp
 
 I'm a late entrant into the web game, having only started as a web developer in 2012. But I've been in kissing distance of the web and technology for most of my life, while working as a graphics designer in private business and a technology teacher and VLE admin at further education institutions.
 
-I speak at events, write about the web and am generally considered pretty darned good at what I do. I'm currently at Bitcrowd GmbH in Berlin, and was previously at BBC News, where I was responsible for building the 2015 General Election site.
+I speak at events, write about the web and am generally considered pretty darned good at what I do. I work for Springer Nature (the good Springer, not the evil one) in Berlin, and was previously at BBC News in London, where I was responsible for building the 2015 General Election site.
 
 ## Personal
 If you define me as a *person* and by my life outside work, then I'm a [horse riding](/about/horseriding), [photography-taking](https://flickr.com/photos/sonniesedge), bike riding, beer drinking, feminist leftie; a strawberry-blonde gay woman, with her head always buried in a book.
