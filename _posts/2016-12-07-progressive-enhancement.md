@@ -7,11 +7,9 @@ strapline: You don't get to choose who is viewing your work, you fucking fuck
 
 I rolled my eyes when I saw [this post](https://web.archive.org/web/20161205174122/https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation) circulate around the webosphere. I knew it was clickbait, but I clicked it and read it, because what else is a whiney SJW feminist fuck meant to do while she's drinking her coffee in the morning? But then, as I scanned the page, I realised what deeper level of fucked-up-ness it represents.
 
-But let me back up and explain this. First of all, the article by [@joshkoor](http://twitter.com/joshkorr) revolves around the central notion that bringing Progressive Enhancement (PE from now on) into our work is a burden on the modern web developer. Any site should be able to be rendered 100% in javascript, and that's okay. A modern user has javascript and expecting javascript to not be available is just plain pig-headedness. PE proponents are making a *moral* case for PE, rather than taking a utilitarian and path-of-least-resistance approach.
+But let me back up and explain this. First of all, the article by [@joshkoor](http://twitter.com/joshkorr) revolves around the central notion that bringing Progressive Enhancement (PE from now on) into our work is a burden on the modern web developer. You see, any site should be able to be rendered 100% in javascript, and that's _okay_. Because the modern user has javascript, and expecting javascript to not be available is just plain pig-headedness. Those whiny PE proponents are making a *moral* case for PE, rather than taking a utilitarian and path-of-least-resistance approach.
 
-Fundamentally, the article is a shitty strawman argument against PE. It assumes that PE proponents want the latest canvas-based in-browser game to work with JS turned off. Which is a classic strawman. No, the argument for PE is developing useful apps and sites that achieve core functionality for *everyone*, not matter their browser, OS, hardware and user ableness, offering nice-to-haves as the abilities of those things increase. But no, the author has reduced it down to "PE hardliners want everything to work without JS". (The tech world equivalent of the tabloids shouting "Muslim extremists want you to cover up your daughter!")
-
-Let's quote the article and I'll let you know what I think as we go along. I may swear a bit.
+Fundamentally, the article is a shitty strawman argument against PE. It erroneously states that PE proponents want the latest canvas-based in-browser game to work with JS turned off. Which is bollocks, because the argument for PE is developing useful apps and sites that achieve core functionality for *everyone*, not matter their browser, OS, hardware and user ableness, offering nice-to-haves as the abilities of those things increase. But no, the author has reduced it down to "PE hardliners want everything to work without JS". (The tech world equivalent of the tabloids shouting "Muslim extremists want you to cover up your daughter!")
 
 ## Let the pain begin
 
@@ -21,11 +19,11 @@ First of all, the article of the piece:
 
 This should more accurately read "The Case _For_ Progressive Enhancement Is Flimsy Because It Is A Moral Argument".
 
-Let's state that upfront. The author is arguing against PE because it is based on morality trumping practicality. You'll see why as we progress.
+Let's be clear about this upfront. The author is arguing against PE because it is based on morality trumping practicality. You'll see why this is fucking problematic as we progress.
 
 > ...some PE advocates argue [that] JavaScript should still be used only as an enhancement, and that sites must work without JavaScript.
 
-Firstly, for content-orientated site, yes I absolutely fucking argue that.
+Firstly, for content-orientated site, yes I do absolutely fucking argue that.
 
 Secondly, for webapps, I also absolutely fucking argue that.
 
@@ -33,11 +31,11 @@ Your startup's webapp for getting Soylent delivered to your door so that you don
 
 Even if, like the original author, you discount the moral argument for PE, then you are still left with the practical arguments. The main one of which is: the web is a hostile environment to your code. You do not control the users browser, OS, corporate policy or network speed/latency. You do control their settings. You do not decide if their phone is old and shitty, or sparkly and new. Unlike all other coders in history, Frontend Developers (FEDs) have to code for a mind-bogglingly huge combination of OS, client app and hardware.
 
-Progressive Enhancement is about making sure that your code works on a device, no matter the configuration. What? You're only testing your code on the latest iPhone? You arrogant fuck. *Immediately* go out there and start testing it on an old iPhone 4. Or an entry-level Android device. Because someone out there will be using your app on that and cursing you for making such a shitty site. They'll be cursing you while they're just trying to book their plane tickets, alone, in a country with limited date, but the agents site uses React and was only tested on the latest iPhones with wifi.
+Progressive Enhancement is about making sure that your code works on a device, no matter the configuration. What's that? You're only testing your code on the latest iPhone? You arrogant fuck. *Immediately* go out there and start testing it on an old iPhone 4. Or an entry-level Android device. Because someone out there will be using your app on that and cursing you for making such a shitty site. They'll be cursing you while they're just trying to book their plane tickets, alone, in a country with limited date, but your site uses React and was only tested on the latest iPhone on office-speed wifi.
 
 Part of PE means checking to see how your code works on older devices. You should be feature detecting and Cutting the Mustard to offer the best experience, no matter the device. Part of that might mean, horror of fucking horrors, not using JS to accomplish a task. Does a user need React and the rest of a JS app stack when they're not a byte of memory to spare?
 
-"Oh, but we're not catering for those peop... less-advantaged users" you might cry, throwing your loose fingers in the air. HOW THE FUCK DO YOU KNOW THAT, SHIT FOR BRAINS? Your fancy limousine website might be aimed at the richest and most privileged, and fully tested on Chrome on a bleeding-edge MacBook, but when your exec is forced to use a shitty hotel-lobby computer to access your site and suddenly it grinds to a halt because those computers are locked down by a contracting IT firm who didn't want to take any chances with security? What the fuck are you going to tell them then? "oh sorry, I only tested in on a fancy computer". Idiot.
+"Oh, but we're not catering for those peop... less-advantaged users" you might cry, throwing your loose fingers in the air. HOW THE FUCK DO YOU KNOW THAT, SHIT FOR BRAINS? Your fancy limousine website might be aimed at the richest and most privileged, and fully tested on the latest version of Chrome on a bleeding-edge MacBook, but when your exec is forced to use a shitty hotel-lobby computer to access your site and suddenly it grinds to a halt because those computers are locked down by a contracting IT firm who didn't want to take any chances with security? What the fuck are you going to tell them then? "oh sorry, I only tested in on a fancy computer". Idiot.
 
 ## Morality is hard, mom
 
@@ -50,10 +48,9 @@ Part of PE means checking to see how your code works on older devices. You shoul
 
 "PE is a moral argument and therefore impossible to engage with on a practical level". You know what that sounds like? That you haven't got any argument except "I don't want to do PE". It's the same argument that dipshits use to justify not doing accessibility work: "Oh, every time you say you don't want to do it, they just get angry and you can't argue". Of course I get angry. I've had enough of this teenage boy selfishness masquerading as adult argument.  
 
-I know that progressive enhancement is harder than just jumping straight in and coding your app in whatever your favourite framework is. But guess what? Being a responsbile adult is hard. Caring for others is hard. This fucking world is hard. It's up to each of us to make it *easier* for each other.
+I know that progressive enhancement is harder than just jumping straight in and coding your app in whatever your favourite framework is. But guess what? Being a responsible adult is hard. Caring for others is hard. This fucking world is hard. It's up to each of us to make it *easier* for each other.
 
-If I ever catch one of your anti-PE, anti-a11y people not doing PE work, but they spending a morning just getting the latest framework going in your app, I will personally punch you until your kidneys turn into unicorns.
-
+If I ever catch one of your anti-PE, anti-a11y people not doing PE work, but then spending a morning implementing the latest framework in your app, I will personally punch you until your kidneys turn into unicorns.
 
 > But I am an expert at spotting fuzzy rhetoric and teasing out what’s really being said.
 
@@ -61,7 +58,7 @@ No, you're the kind of shit that enjoys arguing with people, rather than emphasi
 
 > Here is the real progressive enhancement argument: "It’s a moral imperative that everything on the web should be available to everyone everywhere all the time. Failing to achieve — or at least strive for — that goal is inhumane."
 
-Guess what? I FUCKING SUBSCRIBE TO THAT NOTION. Your shitty Soylent app should be usable even by the non-white-manboy-developers of the world (not that they'd fucking want to use it). You're really saying that you're incapable of coding a HTML form that submits a delivery address to some server-side code and stores it? REALLY? Because I can fucking well do that and I am *definitely* not one of the coding elite.
+Guess what? I FUCKING SUBSCRIBE TO THAT NOTION. Your shitty Soylent app should be usable even by the non-white-manboy-developers of the world (not that they'd fucking want to use it). Are you really saying that you're incapable of coding a HTML form that submits a delivery address to some server-side code and stores it? REALLY? Because I can fucking well do that and I am *definitely* not one of the coding elite.
 
 No, you're saying that:
 
@@ -70,7 +67,11 @@ No, you're saying that:
 
 If you don't want to code it then you're a lazy fuck. Morally lazy. No, you fucking are. If you don't want to write code that might work for a minority of people in bad situations, then you're morally corrupt. I'm sick of coddling peoples feelings on this. Just grow a fucking moral spine, you shit.
 
-If, however, you're not ALLOWED to code it... well, that's still a shitty situation, but at least understandable. I've been there. I've had bosses who would not authorise devs to do PE "unless the client pays for it" (we  did it anyway, when we could).
+If, however, you're not ALLOWED to code it... well, that's still a shitty situation, but at least understandable. I've been there. I've had bosses who would not authorise devs to do PE "unless the client pays for it" (we did it anyway, when we could).
+
+That's capitalism for you. If it can fuck over a group of people and still make a profit, it'll do it.
+
+If your arguments against PE revolve around not having the time to do it, or not being allowed to do it, then your arguments are not with PE. They're with a shitty company that values money over people. They're with capitalism itself, which is either going to die, or eat the world. Stop whining about PE and start arguing against capitalism.
 
 ## It's all or nothing in my world
 
@@ -106,9 +107,9 @@ We've just seen far-right capitalist white nationalism - fascism by any other wo
 
 Before you look agog, or pull a face at that statement, just listen to me. The "alt-right" (the fucking fascists) have been among us for years. They were gamergate. They were the internet trolls. They were the fedora-wearing fucks who always felt friend-zoned. They were white guy who felt hurt that he didn't have to think about anybody but himself. They were the able-bodied people who parked in disabled bays because "they're just faking it anyway". They were the people who read the Daily Mail and believe its hate. They were the friends who told racist jokes and then defended it with "not got a sense of humour, love?"
 
-And now they're here again, as the people who don't give a shit about the "difficult people" who might be using their shitty application. They're the people who say "I'm only talking about javascript here" but what they mean is "why do I have to bother about accessibility?" and want to JUST SHIP CODE rather than thinking about, or having any empathy for, others.
+And now they're here again, as the people who don't give a shit about the "difficult people" who might be using their shitty application. They're the people who say "I'm only talking about javascript here" but mean "why do I have to bother about accessibility?". They're the coders who want to JUST SHIP CODE rather than thinking about, or having any empathy for, others. They're half people, bereft of empathy or kindness. They're the people running the web.
 
-They are people who say "But if you take away the moral argument, why should you care about PE or a11y?".
+These people say "But if you take away the moral argument, why should you care about PE or a11y?".
 
 THE MORAL ARGUMENT *IS* THE FUCKING ARGUMENT, YOU FEDORA-WEARING SHITBEAN.
 
