@@ -5,7 +5,7 @@ date:   2016-12-06 12:00:00
 strapline: You don't get to choose who is viewing your work, you fucking fuck
 ---
 
-I rolled my eyes when I saw [this post](https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation) circulate around the webosphere. I knew it was clickbait, but I clicked it and read it, because what else is a whiney SJW feminist fuck meant to do while she's drinking her coffee in the morning? But then, as I scanned the page, I realised what deeper level of fucked-up-ness it represents.
+I rolled my eyes when I saw [this post](https://web.archive.org/web/20161205174122/https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation) circulate around the webosphere. I knew it was clickbait, but I clicked it and read it, because what else is a whiney SJW feminist fuck meant to do while she's drinking her coffee in the morning? But then, as I scanned the page, I realised what deeper level of fucked-up-ness it represents.
 
 But let me back up and explain this. First of all, the article by [@joshkoor](http://twitter.com/joshkorr) revolves around the central notion that bringing Progressive Enhancement (PE from now on) into our work is a burden on the modern web developer. Any site should be able to be rendered 100% in javascript, and that's okay. A modern user has javascript and expecting javascript to not be available is just plain pig-headedness. PE proponents are making a *moral* case for PE, rather than taking a utilitarian and path-of-least-resistance approach.
 
