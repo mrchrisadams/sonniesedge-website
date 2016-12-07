@@ -107,7 +107,7 @@ gulp.task('deploy', ['build'], function() {
 gulp.task('watch', function() {
   gulp.watch(sassDir, ['sass-dev', 'jekyll-rebuild']);
   gulp.watch(['index.html', './*.md', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
-  gulp.watch('rss.js', ['js', 'jekyll-rebuild']);
+  gulp.watch(['bundle.js'], ['js', 'jekyll-rebuild']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
