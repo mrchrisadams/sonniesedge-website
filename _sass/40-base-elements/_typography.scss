@@ -2,6 +2,8 @@ $LOOM-a-color: get-color(pink);
 $LOOM-a-color-visited: get-color(pink);
 $LOOM-a-color-hoverfocus: get-color(pink);
 
+$LOOM-typography-vertical-spacing: 1.5rem;
+
 blockquote {
   border-left: get-spacing(xsmall) solid get-color(gray);
   margin-left: get-spacing(xsmall);
