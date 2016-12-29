@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "An open letter to that guy who wrote that 'Always Hacking' tweet"
+title:  "An open letter to the guy who wrote that 'Always Hacking' tweet"
 date:   2016-12-27 12:00:00
 categories: sjw
-strapline: Seriously, what's wrong with you?
+strapline: Seriously dude, what's wrong with you?
 ---
 
 Joe, if you want an insight into why the web industry is so broken, just look at [the tweet](https://twitter.com/joemccann/status/812732099027419139) that you wrote on Christmas Eve:
@@ -36,7 +36,7 @@ The Frumpy Daughter Who Works With Computers For Some Reason will always offer t
 
 “Can I help out, mum?”
 
-“You can go put the washing on. And prep the vegetables. And wrap some presents”
+“You can go put the washing on. And prep the vegetables. And wrap some presents.”
 
 She will not be Always Hacking. Because she does not have the time.
 
@@ -44,7 +44,7 @@ And that is only *one* axis of the [kyriarchy](https://en.wikipedia.org/wiki/Kyr
 
 Because do you think a programmer with a disability is happily hacking over the holidays? Or are they trying to make sure their basic needs are met, in a society that wants to hide and push down anybody who is not currently abled?
 
-Do you think the …. Joe, _please_ stop looking at your tweets and just pay attention … do you think the single mother programmer, raising three kids, is always hacking? Or is she looking after her children and trying to make Christmas a happy time for them?
+Do you think the ... Joe, _please_ stop looking at your tweets and just pay attention ... do you think the single mother programmer, raising three kids, is always hacking? Or is she looking after her children and trying to make Christmas a happy time for them?
 
 Do you thing the LGBT programmer, desperately trying to make emotional bridges with a family who does not understand them, is always hacking? Or are they outside, avoiding their family as much as possible?
 
