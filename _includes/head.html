@@ -28,8 +28,8 @@
 
   {% if page.description %}
   <meta name="twitter:description" content="{{ page.description }}">
-  {% elsif post.strapline %}
-  <meta name="twitter:description" content="{{ post.strapline }}">
+  {% elsif page.strapline %}
+  <meta name="twitter:description" content="{{ page.strapline }}">
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
@@ -44,5 +44,5 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
