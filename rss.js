@@ -19,7 +19,7 @@ function createCORSRequest(method, url) {
 }
 
 function makeCorsRequest() {
-    var url = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.pinboard.in%2Frss%2Fu%3Asonniesedge%2Ft%3Aweb';
+    var url = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.pinboard.in%2Frss%2Fu%3Asonniesedge%2Ft%3Aweb&api_key=goknwjfl4xxbfzisy3xgu6vzqwqytrirn8rz4dtx&order_by=pubDate&order_dir=desc&count=40';
 
     var xhr = createCORSRequest('GET', url);
     if (!xhr) {
