@@ -1,29 +1,29 @@
 // SETTINGS
 @import '10-settings/misc';
 // ----->  ADD YOUR OWN SETTINGS HERE! :D
-@import 'loom/10-global-settings';
+@import '../../../node_modules/loomcss/assets/loom/10-global-settings';
 // NOOOO! DON'T YOUR OWN SETTINGS AT THE END! :( SEE THE TEXT ABOVE!
 
 // TOOLS
-@import 'loom/20-tools';
+@import '../../../node_modules/loomcss/assets/loom/20-tools';
 // -----> ADD YOUR OWN TOOLS HERE! :D
 
 // GENERIC
-@import 'loom/30-generic';
+@import '../../../node_modules/loomcss/assets/loom/30-generic';
 // -----> ADD YOUR OWN GENERIC STYLES HERE! :D
 @import '30-generic/syntax-highlighting';
 
 // BASE ELEMENTS
 @import '40-base-elements/typography';
-@import 'loom/40-base-elements';
+@import '../../../node_modules/loomcss/assets/loom/40-base-elements';
 // -----> ADD YOUR OWN BASE ELEMENTS HERE! :D
 
 // LAYOUT
-@import 'loom/50-layout';
+@import '../../../node_modules/loomcss/assets/loom/50-layout';
 // -----> ADD YOUR OWN LAYOUT ENGINES HERE! :D
 
 // OBJECTS
-@import 'loom/60-objects';
+@import '../../../node_modules/loomcss/assets/loom/60-objects';
 // -----> ADD YOUR OWN OBJECTS HERE! :D
 
 // UI COMPONENTS
@@ -35,7 +35,7 @@
 @import '70-ui-components/page-header';
 
 // UTILITIES
-@import 'loom/80-utilities';
+@import '../../../node_modules/loomcss/assets/loom/80-utilities';
 // -----> ADD YOUR OWN UTILITIES HERE! :D
 @import '80-utilities/border';
 
