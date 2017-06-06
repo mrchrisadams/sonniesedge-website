@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " Speaking at Frontend United 2017"
+title:  "Speaking at Frontend United 2017"
 date:   2017-06-02 12:00:00
 strapline: Speaking at people in public
 ---
