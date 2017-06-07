@@ -11,9 +11,9 @@ I know, I know, my life is simply too exciting.
 
 Now, I know that because I write a lot about the universal web and progressive enhancement, people assume that I must hate javascript. 
 
-This would an incorrect assumption. 
+This would be an incorrect assumption. 
 
-I simply hate people relying on brittle client-side javascript when there are other alternatives. In the same way as I wouldn't rely on some unknown minicab firm as as the sole way of getting me to the airport for a wedding flight, I don't like relying on a non-guaranteed technology as the sole way of delivering a web app.
+I simply hate people relying on brittle client-side javascript when there are other alternatives. In the same way as I wouldn't rely on some unknown minicab firm as the sole way of getting me to the airport for a wedding flight, I don't like relying on a non-guaranteed technology as the sole way of delivering a web app.
 
 For me it's a matter of elegance and simplicity over unnecessary complexity.
 
@@ -39,6 +39,7 @@ If this were the only manifestation of turning off javascript, I'd do this for t
 Let's get to it. I think I've got a pretty representative list of sites in my open tabs (perhaps due to the aforementioned Tab Problem). Howl at me on Twitter if you feel I missed anything particularly important.
 
 ### Feedly
+
 ![](/images/posts/a-day-without-javascript/feedly.png)
 
 My very first attempt at sans-JS and I get nothing but a blank white page. Fuck you feedly. 
@@ -52,14 +53,17 @@ But why do you work like this, Feedly? Your devs _could_ offer the site in basic
 *Verdict:* Relationship counselling.
 
 ### Twitter
+
 ![](/images/posts/a-day-without-javascript/twitter.png)
 
-Twitter shows the normal website (with full content) for a brief moment, then redirects to [mobile.twitter.com](https://mobile.twitter.com) (the old one, not the spanky new React one, of course). This is really frustrating, as the full site would still be great to load without javascript. It could use the same navigation method as as the mobile site, where it sets a query parameter to the URL "?max_id=871333359884148737" that dictates with is the latest tweet in your timeline to show. Simple and elegant. 
+Twitter shows the normal website (with full content) for a brief moment, then redirects to [mobile.twitter.com](https://mobile.twitter.com) (the old one, not the spanky new React one, of course). This is really frustrating, as the full site would still be great to load without javascript. It could use the same navigation method as the mobile site, where it sets a query parameter to the URL "?max_id=871333359884148737" that dictates what is the latest tweet in your timeline to show. Simple and elegant. 
 
 *Verdict:* Could try harder.
 
 ### Google Chrome
+
 ![](/images/posts/a-day-without-javascript/chrome_download.png)
+
 The Google Chrome download page just fails completely, with no notice, only a blank white page.
 
 _Sigh_.
@@ -67,7 +71,9 @@ _Sigh_.
 *Verdict:* No Chrome for you, you dirty javascriptophobe!
 
 ### Youtube
+
 ![](/images/posts/a-day-without-javascript/youtube.png)
+
 Youtube really really wants to load. Really, reallllllly, wants to. But then it fucks things up at the last nanosecond and farts out, showing no video, no preview icons, and no comments (that last one is perhaps a positive). 
 
 Even if the site is doing some funky blob loading of video media, it wouldn't be hard to put a basic version on the page initially (with `preload="none"`), and then have it upgrade when JS kicks in.
@@ -75,12 +81,15 @@ Even if the site is doing some funky blob loading of video media, it wouldn't be
 *Verdict:* Can't watch My Drunk Kitchen or Superwoman. :( :( :(
 
 ### 24 ways
+
 ![](/images/posts/a-day-without-javascript/24ways.png)
+
 I've had this open in my tabs for the last 6 months, meaning to read it. Look, I'M SORRY, okay? But holy fuck, this site works great without javascript. All the animations are there (because they're CSS) and the slide in navigation works (because it internally links to the static version of the menu at the bottom of the page).
 
 *Verdict:* Class act. Smoooooth. Jazzz.
 
 ### Netflix
+
 ![](/images/posts/a-day-without-javascript/netflix.png)
 I'm using netflix to try and indoctrinate my girlfriend into watching Star Trek. So far she's not convinced, mainly because "Tasha _slept with Mr Data?_ But it'd be like fucking your microwave". 
 
@@ -89,24 +98,31 @@ Anyway, Netflix doesn't work. Well, it loads the header, if you want to count th
 *Verdict:* JavaScript-only is the New Black
 
 ### NYtimes
+
 ![](/images/posts/a-day-without-javascript/nytimes_with_js.png)
 
 ![](/images/posts/a-day-without-javascript/nytimes_sans_js.png)
+
 Not sure why this was in my tab list, but tbh I've found rotting tabs from 2015 in there, so I'm not surprised. 
 
-The NYtimes site loads in _561ms_ and 957kb without javascript. Holy crap, that's what it should be like normally. For reference it took 12000ms (12seconds) and 4000kb (4mb) to load _with_ javascript. Oh, and as a bonus, you get a screenful of adverts. 
+The NY Times site loads in _561ms_ and 957kb without javascript. Holy crap, that's what it should be like normally. For reference it took 12000ms (12seconds) and 4000kb (4mb) to load _with_ javascript. Oh, and as a bonus, you get a screenful of adverts. 
 
 A lot of images are lazy loaded, and so don't work, getting replaced with funky loading icons. But hey ho, I can still read the stories.
 
 *Verdict:* Failing... to _not_ work. Sad!
 
 ### BBC News
+
+![](/images/posts/a-day-without-javascript/bbc_news.png)
+
 It's the day after the latest London terrorism attacks, and so I've got this open, just to see how the media intensifies and aids every terrorist action. The BBC is the inventor and poster-child for progressive enhancement via Cutting the Mustard, and it doesn't disappoint. The non-CTM site works fully and while it doesn't _look_ the same as the full desktop site (it's mobile-first and so is pretty much the mobile version), it still _works_.
 
 *Verdict:* Colman's Mustard
 
 ### Google search
+
 ![](/images/posts/a-day-without-javascript/google.png)
+
 Without JS, Google search still does what it's best at: searching. 
 
 Okay, there's no autocomplete, the layout reverts to the early 2000s again, and image search is shockingly bad looking. But, in the best progressive enhancement manner, you can still perform your core tasks.
@@ -114,16 +130,30 @@ Okay, there's no autocomplete, the layout reverts to the early 2000s again, and 
 *Verdict:* Solid.
 
 ### Wikipedia
+
 ![](/images/posts/a-day-without-javascript/wikipedia.png)
+
 Like a good friend, Wikipedia never disappoints. The site is indistinguishable from the JS version. Keep being beautiful, Wikipedia.
 
 *Verdict:* BFFs.
 
 ### Amazon
+
 ![](/images/posts/a-day-without-javascript/amazon.png)
+
 The site looks a little... _off_ without JS (the myriad accordions vomit their content over the page when JS isn't there to keep them under control). But the entire site works! You can still search, you still get recommendations. You can still add items to your basket, and you can still proceed to the checkout.
 
 *Verdict:* Amazonian warrior.
+
+### Google Maps
+
+![](/images/posts/a-day-without-javascript/google_maps.png)
+
+Discounting Gmail, Google Maps is perhaps one of the most heavily used Single Page Applications out there. As such I expected some kind of fallback, like Gmail provides, even if it wasn't true progressive enhancement. Maybe some kind of Streetmap style tile-by-tile navigation fallback?
+
+But it failed completely. 
+
+*Verdict:* Cartography catastrophe. 
 
 ## Overall verdict
 
