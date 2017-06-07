@@ -121,14 +121,18 @@ Like a good friend, Wikipedia never disappoints. The site is indistinguishable f
 
 ### Amazon
 ![](/images/posts/a-day-without-javascript/amazon.png)
-The site looks a little... _funky_ without JS (all the accordions vomit their content over the page when JS isn't there to keep them under control). But the entire site works! You can still search, you still get recommendations. You can still add items to your basket, and you can still proceed to the checkout.
+The site looks a little... _off_ without JS (the myriad accordions vomit their content over the page when JS isn't there to keep them under control). But the entire site works! You can still search, you still get recommendations. You can still add items to your basket, and you can still proceed to the checkout.
 
-*Verdict:*
+*Verdict:* Amazonian warrior.
 
 ## Overall verdict
 
-It is a sad indictment of things that sites can be so slow on the multi-core hyperpowerful Mac that I use every day, but immediately become fast when JavaScript is disabled. 
+This has made me appreciate the number of large sites that make the effort to build robust sites that work for everybody. But even on those sites that are progressively enhanced, it's a sad indictment of things that they can be so slow on the multi-core hyperpowerful Mac that I use every day, but immediately become fast when JavaScript is disabled. 
 
-It's not a popular view, but I still maintain that Javascript is an enhancement, and we shouldn't be relying on it to deliver content. 
+It's even sadder when using a typical site and you realise how much Javascript it downloads. I now know why my 1GB mobile data allowance keeps burning out at least... 
+
+I maintain that it's perfectly possible to use the web without javascript, especially on those sites that are considerate to the diversity of devices and users out there. And if I want to browse the web without javascript, well fuck, that's my choice as a user. This is the web, not the Javascript App Store, and we should be making sure that things work on even the most basic device. 
+
+I think I'm going to be turning off javascript more, just on principle. 
 
 Haters, please tweet at me as you feel fit. 
