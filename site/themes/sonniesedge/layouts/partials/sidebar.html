@@ -1,0 +1,9 @@
+	<aside>
+		<h1>Latest posts</h1>
+
+		<ul>
+			{{ range first 5 (where .Site.Pages "Type" "posts").ByDate.Reverse }}
+			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+		</ul>
+	</aside>

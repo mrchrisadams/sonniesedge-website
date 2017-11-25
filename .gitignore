@@ -1,8 +1,6 @@
-_site
-.sass-cache
-.jekyll-metadata
-.bundle
-node_modules
-.publish
-assets
-.idea/
+themes/sonniesedge/static/css
+node_modules/
+public/
+themes/sonniesedge/static/
+.DS_Store
+dist/

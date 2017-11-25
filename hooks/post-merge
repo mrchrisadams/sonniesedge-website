@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Received new lovely code"
+
+echo $PROD
+if [ $PROD == "true" ]
+then
+  /var/www/sonniesedge-website/build.sh
+fi
