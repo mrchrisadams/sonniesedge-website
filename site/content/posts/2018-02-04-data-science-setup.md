@@ -7,12 +7,10 @@ categories = ["webtech"]
 slug = "data-science-tools"
 +++
 
-My girfriend recently attended an introduction to [data science workshop at Thoughtworks](https://github.com/ThoughtWorksInc/twde-datalab) that assumed that the attendees were all programmers, with a full working knowledge of how package managers and tech tooling worked. As she's an actual, you know, _post-doctoral research scientist helping reaserch Alzheimer's Disease_, she really doesn't have to time to fuck around learning tech tools for fun, and so didn't have a machine ready to deal with this stuff. But being the kind soul that I am (and who likes having a happy partner), I wrote up how to get a machine working with data science tech tools, and I'm sharing it with you here. 
-
+My girfriend recently attended an [introduction to data science workshop at Thoughtworks](https://github.com/ThoughtWorksInc/twde-datalab) that assumed that the attendees had a working knowledge of package managers and tech tooling. As she's an actual, you know, _post-doctoral research scientist helping build insights into Alzheimer's Disease_, she really doesn't have to time to fuck around learning tech tools for fun, and so didn't have a machine ready to deal with this stuff. But being the kind soul that I am (and who likes having a happy partner), I wrote up how to get a machine working with data science tech tools, and I'm sharing it with you here. 
 
 ## Overview
 This installation guide assumes a completely blank install of MacOS High Sierra. If you're following this guide on any other OS or machine state then you may have software that interferes with this! This is just a rough guide, not an infallable instruction list! Be warned!
-
 
 ## Installing base software
 
@@ -22,13 +20,13 @@ I'd also recommend installing iTerm, as it's just nicer to use than MacOS's defa
 
 So, first of all, install the Xcode command-line tools with:
 
-```
+```bash
 $ xcode-select --install
 ```
 
 Then we need to install Brew. We do this by telling the Ruby interpreter to download a script off the internet and to run it. (Running a remote script would normally be a risky thing to do, but Brew is well known and trusted, so go ahead).
 
-```
+```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)”
 ```
 
@@ -42,7 +40,7 @@ I'm following from lots of useful tips from David Culley, who [published his own
 
 Let's install the CLI tool "wget", which kinda stands for "Webserver Get", and is a tool to get things from web servers. We'll need this in a second. (BTW, if you didn't install Brew earlier, you'll need to figure out how to install your own copy of wget).
 
-```
+```bash
 $ brew install wget
 ```
 
@@ -56,13 +54,13 @@ Got that? Good, because it took me a good while to get my head around it.
 
 So, let's use `wget` to download the `Miniconda` installer.
 
-```
+```bash
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
 We then run it with:
 
-```
+```bash
 $ bash Miniconda3-latest-MacOSX-x86_64.sh 
 ```
 
@@ -70,7 +68,7 @@ I'd recommend choosing the defaults for everything.
 
 When that is finished, remove the original installer with:
 
-```
+```bash
 $ rm ~/Miniconda3-latest-MacOSX-x86_64.sh
 ```
 
@@ -78,7 +76,7 @@ At this point you should open a new terminal window! This is because miniconda j
 
 We can see the effects on your PATH by typing:
 
-```
+```bash
 $ echo $PATH
 ```
 
@@ -86,13 +84,13 @@ It should hopefully show miniconda at the start of the PATH line.
 
 So we've installed Miniconda, but want access to Anaconda, which has all the useful Python science packages. 
 
-```
+```bash
 $ conda install anaconda
 ```
 
 Just to make sure everything is up to date, run the following: 
 
-```
+```bash
 $ conda update --all
 ```
 
@@ -103,25 +101,25 @@ Now we switch to the Thoughtworks guide at https://github.com/ThoughtWorksInc/tw
 
 We need a place to hold all your different fun science projects. I'd recommend a folder in your home dir called "Projects". You can make this with:
 
-```
+```bash
 $ mkdir ~/Projects
 ```
 
 Clone the Thoughtworks project and move into the appropriate folder:
 
-```
+```bash
 $ git clone https://github.com/ThoughtWorksInc/twde-datalab && cd twde-datalab
 ```
 
 Then use "pip" (which was installed by the Anaconda package) to install all the things listed in "requirements.txt" (which just came from the git repo).
 
-```
+```bash
 $ pip install -r requirements.txt
 ```
 
 Now run the script that came from with the project. (If you like, you can take a look at what's inside it with "cat run_decisiontree_pipeline.sh"). 
 
-```
+```bash
 $ sh run_decisiontree_pipeline.sh
 ```
 
