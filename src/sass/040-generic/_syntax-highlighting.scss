@@ -2,8 +2,14 @@
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff;
-  color: #333;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: get-spacing('small');
+
+    pre {
+      margin-bottom: 0;
+    }
 
     .highlighter-rouge & {
       border: 1px solid #e4e4e4;
