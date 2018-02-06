@@ -18,7 +18,7 @@ I speak at events, write about the web and am generally considered pretty darned
 ## Personal
 If you define me as a *person* and by my life outside work, then I'm a [horse riding](/about/horseriding), [photography-taking](https://flickr.com/photos/sonniesedge), bike riding, beer drinking, feminist leftie; a strawberry-blonde gay woman, with her head always buried in a book.
 
-Oh, and I moved from [London to Berlin](/blog/berlin) recently, so check up on that.
+In 2015 I moved from [London to Berlin](/blog/berlin), as London had been driving me mad, and Berlin has parks and cheap beer.
 
 Bonus fact: I have voluntary control of my [tensor tympani muscles](http://en.m.wikipedia.org/wiki/Tensor_tympani_muscle).
 

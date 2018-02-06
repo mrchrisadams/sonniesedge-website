@@ -42,6 +42,7 @@
 @import '080-ui-components/header';
 @import '080-ui-components/summary';
 @import '080-ui-components/post-title';
+@import '080-ui-components/frontpage';
 
 // ----->  Overrides of this layer's Loom variables go above here!
 @import 'loom/090-scaffolding';
@@ -55,3 +56,8 @@
 // ----->  Overrides of this layer's Loom variables go above here!
 @import 'loom/110-overrides'; // rename to veto
 // ----->  ADD YOUR OWN MODULES BELOW HERE!
+
+
+.c-masthead {
+    @include font-size('major');
+}

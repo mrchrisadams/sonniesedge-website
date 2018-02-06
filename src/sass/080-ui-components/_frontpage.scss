@@ -1,0 +1,8 @@
+.c-frontpage {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
+
+.c-frontpage__photo {
+    margin-right: get-spacing('small')
+}
