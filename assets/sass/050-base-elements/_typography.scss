@@ -35,10 +35,10 @@ h6,
 .h6 {
   letter-spacing: 1.2px;
   line-height: 1.2;
+  margin-bottom: get-spacing('small');
 
   .fonts-loaded & {
     letter-spacing: initial;
     line-height: 1.2;
-    margin-bottom: get-spacing('xsmall');
   }
 }
