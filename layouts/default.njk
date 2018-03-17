@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block header %}
+            <title>{{title}} | sonniesedge</title>
+        {% endblock %}
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/main.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    </head>
+    <body>
+        <div class="c-mainlayout">
+            <header>
+                <nav>
+                    <ul class="c-nav">
+                        {% for item in mainnav %}
+                            <li class="c-nav__item {% if item.path == path %}c-nav__item--current{% endif %}"><a class="c-nav__link" href="/{{item.path}}">{{item.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>
+                    {% if realtitle %}
+                        {{ realtitle }}
+                    {% else %}
+                        {{ title }}
+                    {% endif %}
+                </h1>
+
+                {{ contents | safe }}
+                {% block list %}
+                {% endblock %}
+            </main>
+            <footer class="c-footer">
+                <p class="c-footer__text">&copy; Some shit about copyright and year that isn't actually in any way relevant or legal, but is a classic "we've always done it like that" thing.</p>
+            </footer>
+        </div>
+    </body>
+</html>
