@@ -1,4 +1,6 @@
 .c-mainlayout {
-    width: 70em;
-    margin: 0 auto;
+    @include mq(get-mqbreakpoint('medium')) {
+        width: 70em;
+        margin: 0 auto;
+    }
 }
