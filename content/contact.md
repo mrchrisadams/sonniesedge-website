@@ -6,8 +6,10 @@ type: page
 weight: 30
 ---
 
-If you want to get in touch, then email is always the easiest way, but I’ll probably respond if prodded on Twitter.
+<p>If you want to get in touch, then email is always the easiest way, but I’ll probably respond if prodded on Twitter.</p>
 
-- Email: [charlie@sonniesedge.co.uk](mailto:charlie@sonniesedge.co.uk)
-- Twitter: [@sonniesedge](https://twitter.com/sonniesedge)
-- Github: [https://github.com/sonniesedge](https://github.com/sonniesedge)
+<ul>
+  <li>Email: <a href="mailto:charlie@sonniesedge.co.uk" rel="me">charlie@sonniesedge.co.uk</a></li>
+  <li>Twitter: <a href="https://twitter.com/sonniesedge" rel="me">@sonniesedge</a></li>
+  <li>Github: <a href="https://github.com/sonniesedge" rel="me">@sonniesedge</a></li>
+</ul>
