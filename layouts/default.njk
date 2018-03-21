@@ -26,15 +26,11 @@
                 </nav>
             </header>
             <main>
-                <h1>
-                    {% if realtitle %}
-                        {{ realtitle }}
-                    {% else %}
-                        {{ title }}
-                    {% endif %}
-                </h1>
+                {% block content %}
+                    <h1>{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</h1>
+                    {{ contents | safe }}
+                {% endblock %}
 
-                {{ contents | safe }}
                 {% block list %}
                 {% endblock %}
             </main>

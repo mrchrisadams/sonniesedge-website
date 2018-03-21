@@ -5,6 +5,7 @@ const rename = require('metalsmith-rename');
 const collections = require('metalsmith-collections');
 const permalinks = require('metalsmith-permalinks');
 const metalsmithPrism = require('metalsmith-prism');
+const defaultvals = require('metalsmith-default-values');
 
 Metalsmith(__dirname)
     .source('./content')
@@ -22,6 +23,14 @@ Metalsmith(__dirname)
             sortBy: 'weight'
         }
     }))
+    .use(defaultvals([
+        {
+            pattern: ['posts/*.md', '!posts/index.md'],
+            defaults: {
+                layout: 'post.njk'
+            }
+        }
+    ]))
     .use(markdown({
         smartypants: true,
         gfm: true,
