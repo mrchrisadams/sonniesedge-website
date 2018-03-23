@@ -7,7 +7,7 @@ weight: 0
 
 <div class="h-card">
 
-<p>Hallo, Ich heiße <a href="/" rel="me">Charlie</a> (aka sonniesedge). I'm an Ex-Britisher lives and works in the beautiful city of Berlin, Deutschland.</p>
+<p>Hallo, Ich heiße <a href="/about/" rel="me" class="u-url">Charlie</a> (aka sonniesedge). I'm an Ex-Britisher lives and works in the beautiful city of Berlin, Deutschland.</p>
 
 <p>I pay the rent by selling my labour as a FED, where I'm ~~passionate about~~ - wait, no, stop. Stop. I absolutely despise that phrase. No, let's be honest: I'm really, REALLY, good at frontend processes and architecture, at delivering a consistent experience to all types of devices, and at generally giving a crap about the user.</p>
 
