@@ -13,6 +13,14 @@ Metalsmith(__dirname)
     .use(rename([
         [/\_index.md$/, "index.md"]
     ]))
+    .use(defaultvals([
+        {
+            pattern: ['posts/*.md', '!posts/index.md'],
+            defaults: {
+                layout: 'post.njk'
+            }
+        }
+    ]))
     .use(collections({
         posts: {
           pattern: ['posts/*.md', '!posts/index.md'],
@@ -23,14 +31,6 @@ Metalsmith(__dirname)
             sortBy: 'weight'
         }
     }))
-    .use(defaultvals([
-        {
-            pattern: ['posts/*.md', '!posts/index.md'],
-            defaults: {
-                layout: 'post.njk'
-            }
-        }
-    ]))
     .use(markdown({
         smartypants: true,
         gfm: true,

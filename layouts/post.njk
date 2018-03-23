@@ -3,10 +3,9 @@
   {% block content %}
   <article  class="h-entry">
       <header>
-
         <a href="{{ path }}" class="u-url"><h1 class="e-content p-name">{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</h1></a>
         <p>{{ strapline }}</p>
-        <time class="dt-published">{{ date }}</time>
+        <p><time class="dt-published">{{ date }}</time></p>
       </header>
       {{ contents | safe }}
   </article>
