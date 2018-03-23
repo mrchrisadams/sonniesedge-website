@@ -11,6 +11,8 @@ import rename from 'metalsmith-rename';
 import collections from 'metalsmith-collections';
 import permalinks from 'metalsmith-permalinks';
 import metalsmithPrism from 'metalsmith-prism';
+import defaultvals from 'metalsmith-default-values';
+import dateFormatter from 'metalsmith-date-formatter';
 
 gulp.task('smithy', function () {
     return gulp.src('./content/**')
@@ -22,6 +24,17 @@ gulp.task('smithy', function () {
             rename([
                 [/\_index.md$/, "index.md"]
             ]),
+            defaultvals([
+                {
+                    pattern: ['**/posts/*.md', '!**/posts/index.md'],
+                    defaults: {
+                        layout: 'post.njk'
+                    }
+                }
+            ]),
+            dateFormatter({
+                date: '2015-05-30'
+            }),
             collections({
                 posts: {
                   pattern: [
