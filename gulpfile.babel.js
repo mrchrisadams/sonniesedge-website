@@ -32,9 +32,6 @@ gulp.task('smithy', function () {
                     }
                 }
             ]),
-            dateFormatter({
-                date: '2015-05-30'
-            }),
             collections({
                 posts: {
                   pattern: [
@@ -63,6 +60,9 @@ gulp.task('smithy', function () {
                 ],
                 relative: false
               }),
+            dateFormatter({
+                date: '2015-05-30'
+            }),
             layouts({
                 engine: 'nunjucks',
                 default: 'default.njk',
@@ -73,7 +73,7 @@ gulp.task('smithy', function () {
             })
         ],
         metadata: {
-          site_title: 'Sample static site'
+          site_title: 'sonniesedge.co.uk'
         }
       }))
       .pipe(gulp.dest('./dist'))
