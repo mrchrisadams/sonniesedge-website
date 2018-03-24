@@ -55,7 +55,7 @@ gulp.task('smithy', function () {
                 linksets: [
                     {
                         match: { collection: 'posts' },
-                        pattern: '/posts/:title'
+                        pattern: '/posts/:slug'
                     }
                 ],
                 relative: false
