@@ -1,29 +1,29 @@
-@import '010-settings/misc'; // settings above, your modules below
+@import '010-settings/misc'; // Loom settings above, your modules below
 @import 'loom/010-global-settings';
 
-@import 'loom/020-functions'; // settings above, your modules below
+@import 'loom/020-functions'; // Loom settings above, your modules below
 
-@import 'loom/030-mixins'; // settings above, your modules below
+@import 'loom/030-mixins'; // Loom settings above, your modules below
 
-@import 'loom/040-generic'; // settings above, your modules below
+@import 'loom/040-generic'; // Loom settings above, your modules below
 @import '040-generic/syntax-highlighting';
 
-@import 'loom/050-base-elements'; // settings above, your modules below
+@import 'loom/050-base-elements'; // Loom settings above, your modules below
 @import '050-base-elements/images';
 @import '050-base-elements/typography';
 
-@import 'loom/060-layout'; // settings above, your modules below
+@import 'loom/060-layout'; // Loom settings above, your modules below
 
-@import 'loom/070-objects'; // settings above, your modules below
+@import 'loom/070-objects'; // Loom settings above, your modules below
 
-@import 'loom/080-ui-components'; // settings above, your modules below
+@import 'loom/080-ui-components'; // Loom settings above, your modules below
 @import '080-ui-components/sidebar';
 @import '080-ui-components/postslist';
 @import '080-ui-components/main-layout';
 @import '080-ui-components/footer';
 
-@import 'loom/090-scaffolding';
+@import 'loom/090-scaffolding'; // Loom settings above, your modules below
 
-@import 'loom/100-utilities'; // settings above, your modules below
+@import 'loom/100-utilities'; // Loom settings above, your modules below
 
-@import 'loom/110-overrides'; // settings above, your modules below
+@import 'loom/110-overrides'; // Loom settings above, your modules below
