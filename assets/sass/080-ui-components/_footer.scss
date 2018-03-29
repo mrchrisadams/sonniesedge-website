@@ -1,4 +1,4 @@
-.c-footer {
+.comp-footer {
     padding-top: get-spacing('xsmall');
     @include font-size('sub');
     border-top: 1px solid get-color('gray');
@@ -8,7 +8,7 @@
     }
 }
 
-.c-footer__text {
+.comp-footer__text {
     margin: 0;
 
     @include mq(get-mqbreakpoint('medium')) {
@@ -16,7 +16,7 @@
     }
 }
 
-.c-footer__contacts {
+.comp-footer__contacts {
     @include mq(get-mqbreakpoint('medium')) {
         list-style-type: none;
         padding: 0;

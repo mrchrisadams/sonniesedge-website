@@ -1,4 +1,4 @@
-.c-nav-list {
+.comp-nav-list {
   display: flex;
   @include list-reset();
   justify-content: space-between;
@@ -6,14 +6,19 @@
   flex-wrap: wrap;
 }
 
-.c-nav-list__item {
+.comp-nav-list__item {
   white-space: nowrap;
 }
 
-.c-nav-list__link {
+.comp-nav-list__link {
   color: get-color('black');
 
   &:hover {
     color: get-color('pink');
   }
+}
+
+.comp-nav__logo {
+  display: block;
+  margin: get-spacing('xsmall') 0;
 }

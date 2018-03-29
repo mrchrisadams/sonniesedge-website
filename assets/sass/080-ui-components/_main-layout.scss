@@ -1,4 +1,4 @@
-.c-mainlayout {
+.comp-mainlayout {
     padding: 0 get-spacing('small');
     margin: 0 auto;
     max-width: 1200px;
@@ -14,14 +14,14 @@
     }
 }
 
-.c-mainlayout__sidebar {
+.comp-mainlayout__sidebar {
     grid-area: sidebar;
 }
 
-.c-mainlayout__content {
+.comp-mainlayout__content {
     grid-area: content;
 }
 
-.c-mainlayout__footer {
+.comp-mainlayout__footer {
     grid-area: footer;
 }

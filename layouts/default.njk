@@ -15,9 +15,9 @@
         <link rel="webmention" href="https://webmention.io/sonniesedge.co.uk/webmention" />
     </head>
     <body>
-        <div class="c-mainlayout">
-            <nav class="c-nav c-mainlayout__sidebar">
-                <a href="/about/" class="c-nav__logo"><img src="/images/pages/photo.jpg" class="u-photo" alt="A photo of Charlie Owen. She is white, with red hair, and green eyes."></a>
+        <div class="comp-mainlayout">
+            <nav class="comp-nav comp-mainlayout__sidebar">
+                <a href="/about/" class="comp-nav__logo"><img src="/images/pages/photo.jpg" class="u-photo" alt="A photo of Charlie Owen. She is white, with red hair, and green eyes."></a>
                 <ul>
                     {% for item in mainnav %}
                         {% if item.path == '//' %}
@@ -25,12 +25,12 @@
                         {% else %}
                             {% set newpath = item.path %}
                         {% endif %}
-                        <li class="c-nav__item {% if item.path == path %}c-nav__item--current{% endif %}"><a class="c-nav__link" href="{{ newpath }}">{{ item.title }}</a></li>
+                        <li class="comp-nav__item {% if item.path == path %}comp-nav__item--current{% endif %}"><a class="comp-nav__link" href="{{ newpath }}">{{ item.title }}</a></li>
                     {% endfor %}
                 </ul>
 
             </nav>
-            <main class="c-mainlayout__content">
+            <main class="comp-mainlayout__content">
                 {% block content %}
                     <h1>{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</h1>
                     {{ contents | safe }}
@@ -39,10 +39,10 @@
                 {% block list %}
                 {% endblock %}
             </main>
-            <div class="c-footer c-mainlayout__footer">
-                <p class="c-footer__text">&copy; Some shit about copyright and year that isn't actually in any way relevant or legal, but is a classic "we've always done it like that" thing.</p>
+            <div class="comp-footer comp-mainlayout__footer">
+                <p class="comp-footer__text">&copy; Some shit about copyright and year that isn't actually in any way relevant or legal, but is a classic "we've always done it like that" thing.</p>
                 
-                <ul class="c-footer__contacts">
+                <ul class="comp-footer__contacts">
                   <li>Email: <a href="mailto:charlie@sonniesedge.co.uk" rel="me">charlie@sonniesedge.co.uk</a></li>
                   <li>Twitter: <a href="https://twitter.com/sonniesedge" rel="me">@sonniesedge</a></li>
                   <li>Github: <a href="https://github.com/sonniesedge" rel="me">@sonniesedge</a></li>
