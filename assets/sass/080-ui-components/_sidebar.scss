@@ -17,10 +17,10 @@
   display: block;
   padding: 5px;
   text-decoration: none;
-  border-bottom: 1px solid get-color('darkgray');
 
   &:link {
     color: get-color('darkgray');
+    border-bottom: 1px solid get-color('darkgray');
   }
 
   &:visited {
@@ -28,7 +28,8 @@
   }
 
   &:hover {
-    color: get-color('black');
+    color: get-color('pink');
+    border-bottom: 1px solid get-color('darkgray');
   }
 }
 
