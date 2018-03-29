@@ -9,14 +9,14 @@ weight: 0
 
 <p>Hallo, Ich heiße <a href="/about/" rel="me" class="u-url">Charlie</a> (aka sonniesedge). I'm an Ex-Britisher lives and works in the beautiful city of Berlin, Deutschland.</p>
 
-<p>I pay the rent by selling my labour as a FED, where I'm ~~passionate about~~ - wait, no, stop. Stop. I absolutely despise that phrase. No, let's be honest: I'm really, REALLY, good at frontend processes and architecture, at delivering a consistent experience to all types of devices, and at generally giving a crap about the user.</p>
+<p>I pay the rent by selling my labour as a FED, where I'm ~~passionate about~~ - wait, no, stop. Stop. I absolutely despise that phrase. No, let's be honest: I'm really, really, _good at_ frontend processes and architecture, at delivering a consistent experience to all types of devices, and at generally giving a crap about the user.</p>
 
 <p>I'm all about these processes and technologies:</p>
 
 <ul>
     <li>User-centered experiences</li>
     <li>Design systems</li>
-    <li>CSS pre<li>and post-processing</li>
+    <li>CSS pre- and post-processing</li>
     <li>Automated CSS testing</li>
     <li>Frontend automation</li>
     <li>Large-scale Sass/CSS architecture</li>

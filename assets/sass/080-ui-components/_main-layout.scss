@@ -1,9 +1,26 @@
 .c-mainlayout {
-    padding: 0 get-spacing('xsmall');
+    padding: 0 get-spacing('small');
+    margin: 0 auto;
+    max-width: 1200px;
 
     @include mq(get-mqbreakpoint('medium')) {
-        padding: 0 0;
-        width: 70em;
-        margin: 0 auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr) 4fr;
+        grid-template-areas:
+        "sidebar content"
+        "sidebar content"
+        "footer footer";
     }
+}
+
+.c-mainlayout__sidebar {
+    grid-area: sidebar;
+}
+
+.c-mainlayout__content {
+    grid-area: content;
+}
+
+.c-mainlayout__footer {
+    grid-area: footer;
 }

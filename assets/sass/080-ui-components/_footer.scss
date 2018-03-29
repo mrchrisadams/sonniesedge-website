@@ -1,10 +1,28 @@
 .c-footer {
-    background-color: get-color('darkgray');
-    color: get-color('white');
-    padding: get-spacing('xsmall');
+    padding-top: get-spacing('xsmall');
     @include font-size('sub');
+    border-top: 1px solid get-color('gray');
+    @include mq(get-mqbreakpoint('medium')) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .c-footer__text {
     margin: 0;
+
+    @include mq(get-mqbreakpoint('medium')) {
+        flex-basis: 50%;
+    }
+}
+
+.c-footer__contacts {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(get-mqbreakpoint('medium')) {
+        flex-basis: 40%;
+    }
 }
