@@ -40,6 +40,7 @@
 
 .comp-sidebar__photo {
   max-width: 40%;
+  border-radius: 10%;
 
   @include mq(get-mqbreakpoint('medium')) {
     max-width: 100%;
