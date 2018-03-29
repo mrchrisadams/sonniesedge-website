@@ -1,15 +1,15 @@
-  {% extends "default.njk" %}
+{% extends "default.njk" %}
 
 {% block twittercard %}
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@sonniesedge">
-<meta name="twitter:title" content="{{ title }} | sonniesedge">
-<meta name="twitter:url" content="http://sonniesedge.co.uk{{ path }}">
-<meta name="twitter:description" content="{{ strapline }}">
-<meta name="twitter:image:src" content="http://sonniesedge.co.uk/images/pages/photo.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@sonniesedge">
+  <meta name="twitter:title" content="{{ title }} | sonniesedge">
+  <meta name="twitter:url" content="http://sonniesedge.co.uk{{ path }}">
+  <meta name="twitter:description" content="{{ strapline }}">
+  <meta name="twitter:image:src" content="http://sonniesedge.co.uk/images/pages/photo.jpg">
 {% endblock %}
   
-  {% block content %}
+{% block content %}
   <article  class="h-entry">
       <header class="comp-postheader">
         <h1 class="e-content p-name comp-postheader__title"><a href="{{ path }}" class="u-url comp-postheader__titlelink">{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</a></h1>
@@ -18,4 +18,4 @@
       </header>
       {{ contents | safe }}
   </article>
-  {% endblock %}
+{% endblock %}
