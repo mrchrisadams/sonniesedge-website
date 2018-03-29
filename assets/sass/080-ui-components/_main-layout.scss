@@ -5,7 +5,8 @@
 
     @include mq(get-mqbreakpoint('medium')) {
         display: grid;
-        grid-template-columns: minmax(200px, 1fr) 4fr;
+        grid-template-columns: 150px 4fr;
+        grid-column-gap: get-spacing('small');
         grid-template-areas:
         "sidebar content"
         "sidebar content"
