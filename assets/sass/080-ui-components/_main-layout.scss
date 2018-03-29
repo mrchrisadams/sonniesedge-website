@@ -1,6 +1,6 @@
 .comp-mainlayout {
     padding: 0 get-spacing('small');
-    margin: 0 auto;
+    margin: get-spacing('small') auto;
     max-width: 1200px;
 
     @include mq(get-mqbreakpoint('medium')) {
