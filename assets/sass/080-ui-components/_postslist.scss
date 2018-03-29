@@ -10,7 +10,10 @@
 }
 
 .comp-postslist__item {
-    
+    margin-bottom: get-spacing('xsmall');
+    @include mq(get-mqbreakpoint('medium')) {
+        margin-bottom: 0;
+    }
 }
 
 .comp-postslist__link {
