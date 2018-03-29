@@ -5,7 +5,7 @@
 
     @include mq(get-mqbreakpoint('medium')) {
         display: grid;
-        grid-template-columns: 150px 4fr;
+        grid-template-columns: 150px 1fr;
         grid-column-gap: get-spacing('small');
         grid-template-areas:
         "sidebar content"
@@ -20,6 +20,7 @@
 
 .comp-mainlayout__content {
     grid-area: content;
+    min-width: 0;
 }
 
 .comp-mainlayout__footer {
