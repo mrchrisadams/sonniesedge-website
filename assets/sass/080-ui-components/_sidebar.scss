@@ -1,0 +1,48 @@
+.comp-sidebar {
+
+}
+
+.comp-sidebar__list {
+  @include list-reset();
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: get-spacing('small');
+}
+
+.comp-sidebar__item {
+  white-space: nowrap;
+}
+
+.comp-sidebar__link {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  border-bottom: 1px solid get-color('darkgray');
+
+  &:link {
+    color: get-color('darkgray');
+  }
+
+  &:visited {
+    color: get-color('darkgray');
+  }
+
+  &:hover {
+    color: get-color('black');
+  }
+}
+
+.comp-sidebar__photoframe {
+  text-align: center;
+  display: block;
+  margin: get-spacing('xsmall') 0;
+}
+
+.comp-sidebar__photo {
+  max-width: 40%;
+
+  @include mq(get-mqbreakpoint('medium')) {
+    max-width: 100%;
+  }
+  
+}
