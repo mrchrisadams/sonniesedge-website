@@ -1,0 +1,34 @@
+
+.comp-postslist {
+    @include list-reset();
+    @include mq(get-mqbreakpoint('medium')) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: get-spacing('xsmall');
+        grid-row-gap: get-spacing('xsmall');
+    }
+}
+
+.comp-postslist__item {
+    
+}
+
+.comp-postslist__link {
+    border: 1px solid get-color('gray');
+    text-decoration: none;
+    display: block;
+    padding: get-spacing('xsmall');
+
+    &:hover {
+        background-color: get-color('gray');
+    }
+}
+
+.comp-postslist__title {
+    @include font-family('secondary');
+    @include font-size('gamma');
+}
+
+.comp-postslist__date {
+    color: get-color('darkgray');
+}
