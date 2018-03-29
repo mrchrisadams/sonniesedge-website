@@ -115,6 +115,7 @@ gulp.task('sass', () => {
     return gulp.src('./assets/sass/*.scss')
         .pipe(sass(sassOpts))
         .pipe(gulp.dest('./content/css/'))
+        .pipe(gulp.dest('./dist/css/'))
         .pipe(BrowserSync.stream());
 });
 
