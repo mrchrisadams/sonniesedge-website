@@ -2,10 +2,10 @@
   
   {% block content %}
   <article  class="h-entry">
-      <header>
-        <a href="{{ path }}" class="u-url"><h1 class="e-content p-name">{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</h1></a>
-        <p>{{ strapline }}</p>
-        <p><time class="dt-published">{{ date }}</time></p>
+      <header class="comp-postheader">
+        <h1 class="e-content p-name comp-postheader__title"><a href="{{ path }}" class="u-url comp-postheader__titlelink">{% if realtitle %}{{ realtitle }}{% else %}{{ title }}{% endif %}</a></h1>
+        <p class="comp-postheader__strapline">{{ strapline }}</p>
+        <p class="comp-postheader__date"><time class="dt-published">{{ date }}</time></p>
       </header>
       {{ contents | safe }}
   </article>
