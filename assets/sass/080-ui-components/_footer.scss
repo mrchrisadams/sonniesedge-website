@@ -17,12 +17,11 @@
 }
 
 .c-footer__contacts {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-
     @include mq(get-mqbreakpoint('medium')) {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
         flex-basis: 40%;
     }
 }
