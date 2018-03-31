@@ -13,6 +13,7 @@ import permalinks from 'metalsmith-permalinks';
 import metalsmithPrism from 'metalsmith-prism';
 import defaultvals from 'metalsmith-default-values';
 import dateFormatter from 'metalsmith-date-formatter';
+import pinboard from './metalsmith-pinboard';
 
 gulp.task('smithy', function () {
     return gulp.src('./content/**')
@@ -32,6 +33,7 @@ gulp.task('smithy', function () {
                     }
                 }
             ]),
+            pinboard(),
             collections({
                 posts: {
                   pattern: [
