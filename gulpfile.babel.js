@@ -41,6 +41,14 @@ gulp.task('smithy', function () {
                   sortBy: 'date',
                   reverse: true
                 },
+                talks: {
+                    pattern: [
+                        '**/talks/*.md', 
+                        '!**/talks/index.md'
+                      ],
+                    sortBy: 'date',
+                    reverse: true
+                ]},
                 mainnav: {
                     sortBy: 'weight'
                 }
@@ -56,6 +64,10 @@ gulp.task('smithy', function () {
                     {
                         match: { collection: 'posts' },
                         pattern: '/posts/:slug'
+                    },
+                    {
+                        match: { collection: 'talks' },
+                        pattern: '/talks/:slug'
                     }
                 ],
                 relative: false
@@ -131,7 +143,7 @@ gulp.task('browser-sync', () => {
 
 gulp.task('watch', () => {
     gulp.watch("./assets/sass/**/*.scss", gulp.series('sass'));
-    gulp.watch('./content/posts/**/*', gulp.series("smithy"));
+    gulp.watch('./content/**/*', gulp.series("smithy"));
     gulp.watch('./layouts/**/*', gulp.series("smithy"));
 });
 
