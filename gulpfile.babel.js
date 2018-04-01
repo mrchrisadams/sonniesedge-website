@@ -13,6 +13,8 @@ import permalinks from 'metalsmith-permalinks';
 import metalsmithPrism from 'metalsmith-prism';
 import defaultvals from 'metalsmith-default-values';
 import dateFormatter from 'metalsmith-date-formatter';
+import metalsmithFeed from 'metalsmith-feed';
+import metalsmithExcerpts from 'metalsmith-excerpts';
 
 gulp.task('smithy', function () {
     return gulp.src('./content/**')
@@ -48,7 +50,7 @@ gulp.task('smithy', function () {
                       ],
                     sortBy: 'date',
                     reverse: true
-                ]},
+                },
                 mainnav: {
                     sortBy: 'weight'
                 }
@@ -59,6 +61,7 @@ gulp.task('smithy', function () {
                 tables: true,
                 langPrefix: 'language-'
             }),
+            metalsmithExcerpts(),
             permalinks({
                 linksets: [
                     {
@@ -75,17 +78,29 @@ gulp.task('smithy', function () {
             dateFormatter({
                 date: '2015-05-30'
             }),
+            metalsmithPrism({
+                lineNumbers: true
+            }),
+            metalsmithFeed({
+                collection: 'posts',
+                limit: false,
+                preprocess: file => ({
+                    title: file.title,
+                    description: file.contents
+                })
+            }),
             layouts({
                 engine: 'nunjucks',
                 default: 'default.njk',
                 pattern: '**/*.html'
-            }),
-            metalsmithPrism({
-                lineNumbers: true
             })
         ],
         metadata: {
-          site_title: 'sonniesedge.co.uk'
+          site: {
+            url: 'https://sonniesedge.co.uk',
+            title: 'sonniesedge.co.uk',
+            author: 'Charlie Owen | sonniesedge'
+          } 
         }
       }))
       .pipe(gulp.dest('./dist'))
