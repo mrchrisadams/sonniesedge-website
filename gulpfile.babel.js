@@ -115,18 +115,28 @@ gulp.task('smithy', function () {
 
 
 gulp.task('images', function () {
-    return gulp.src(['./static/images/**/*.{png,jpg}'])
+    return gulp.src(['./images/**/*.{png,jpg,jpeg}'])
       .pipe(responsive(
         {
-            '**/*.jpg': { 
-                width: 200 
-            },
-            '**/*.png': { 
-                width: '50%' 
-            },
-            '**/*': {
-                rename: { suffix: '-thumbnail' },
-            },
+            'pages/**/*': [
+                { 
+                    // width: 600,
+                }
+            ],
+            'posts/**/*': [
+                { 
+                    // width: 600,
+                }
+            ],
+            'talks/**/*': [
+                { 
+                    width: 300
+                },
+                { 
+                    width: 600,
+                    rename: { suffix: '-600px' },
+                }
+            ]
         }, 
         {
             quality: 70,
@@ -134,7 +144,7 @@ gulp.task('images', function () {
             compressionLevel: 6,
             withMetadata: false,
         }))
-      .pipe(gulp.dest('dist/images'));
+      .pipe(gulp.dest('content/images'));
   });
 
 // const browserSync = BrowserSync.create();
@@ -168,5 +178,5 @@ gulp.task('watch', () => {
     gulp.watch('./layouts/**/*', gulp.series("smithy"));
 });
 
-gulp.task('default', gulp.series( 'sass', 'smithy', gulp.parallel('watch', 'browser-sync')));
-gulp.task('build', gulp.series('sass', 'smithy'));
+gulp.task('default', gulp.series( 'sass', 'images', 'smithy', gulp.parallel('watch', 'browser-sync')));
+gulp.task('build', gulp.series('sass', 'images', 'smithy'));
