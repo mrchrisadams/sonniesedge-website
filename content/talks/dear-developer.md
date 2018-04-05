@@ -727,7 +727,7 @@ Think about people carrying a baby, or having both hands full of shopping bags. 
 
 <blockquote>“It’s not okay to block old browsers, but it’s a waste of time to support them 100%”</blockquote>
 
-<p>Too riht Chris! Because you might think that what I’ve been suggesting is that we support all browsers 100% the same, not matter what. Even IE6! 
+<p>Too right, Chris! Because you might think that what I’ve been suggesting is that we support all browsers 100% the same, not matter what. Even IE6! 
 <p>No no no, nothing is further from the truth. I’m lazy, just like every dev. I'm not going to waste time trying to make things look the same in Firefox or Chrome as a browser that even the manufacturer has left to die in the woods. 
 
 <p>No, the trick here is to choose a cut-off point. Especially if you are a large organisation. And the place I work - [Springer Nature](http://springernature.com) - is very fucking large. 
