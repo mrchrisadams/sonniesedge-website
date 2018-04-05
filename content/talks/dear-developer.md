@@ -741,7 +741,7 @@ Think about people carrying a baby, or having both hands full of shopping bags. 
 <h3>Cutting the Mustard</h3>
 
 <p>The BBC were pioneers in this. During their responsive redesign of the BBC News site they developed a novel technique called [Cutting the Mustard](http://responsivenews.co.uk/post/18948466399/cutting-the-mustard) (CTM) 
-<p>What's thhis? Well they serve up a core site: their HTML and some basicCSS - just the same as we developed in the previous section. 
+<p>What's this? Well they serve up a core site: their HTML and some basicCSS - just the same as we developed in the previous section. 
 <p>Then they then check to see what JS capabilities the browser has. It's just a few simple lines of JS. They use this as decider as to whether the browser is "core" or "advanced". 
 <p>If it fails the test, then it's core, and the user is presented with a fully working, but basically styled site. The styling is so simple, with no layout system, that it works on every browser ever made. 
 <p>However, if the test passes then a more advanced site is offered. It uses the same HTML and core stylesheet, but on top of that is layered another set of CSS and a large amount of lovely JS. 
