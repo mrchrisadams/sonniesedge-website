@@ -643,7 +643,7 @@ Think about people carrying a baby, or having both hands full of shopping bags. 
 <p>So how do you start on this journey of building products that are robust and universal? 
 <p>To me the first thing is to figure out your users core journey (or journeys). On every website the user is trying to accomplish _something_. [3](#3)
 
-<p>Take, for example, a site for a new restaurant. What a visual treat to buil! We can add sumptous photos of the food, we can add little animated waiters that march across the page, thrusting bowls of pasta into the air, while a full-screen video of the owner pleading with your to visit loads and plays in the background. 
+<p>Take, for example, a site for a new restaurant. What a visual treat to build! We can add sumptous photos of the food, we can add little animated waiters that march across the page, thrusting bowls of pasta into the air, while a full-screen video of the owner pleading with your to visit loads and plays in the background. 
 
 <p>But in the end all the user wants to find out on the site is:
 
