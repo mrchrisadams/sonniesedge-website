@@ -997,5 +997,7 @@ Think about people carrying a baby, or having both hands full of shopping bags. 
 </div>
 </section>
 
+<p>Special thanks for the many photos from [Women of Color in Tech](http://www.wocintechchat.com/blog/wocintechphotos). ❤️
+
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
