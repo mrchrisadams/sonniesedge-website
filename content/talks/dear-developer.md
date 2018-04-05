@@ -612,6 +612,10 @@ happily scream back, singing the song of their people. Computers could now talk 
 <p>However, one of them works for all people, while the other deliberately excludes huge segments of the population. 
 <p>Such a simple thing, but offering a lever rather than a rotating knob means that the door becomes usable by people with arthritis, people who have hand or arm amputations, or people with hand/arm injuries. 
 
+<aside class="comp-talk__notes">
+    <p>Blame [Laura Kalbag](https://laurakalbag.com/) for the doorknobs analogy - she orginally came up with it in her book [Accessibility for Everyone](https://abookapart.com/products/accessibility-for-everyone)
+</aside>
+
 </div>
 </section>
 
