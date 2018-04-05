@@ -293,8 +293,6 @@ happily scream back, singing the song of their people. Computers could now talk 
 <p>[Heydon Pickering](http://www.heydonworks.com/) [reminded me recently](https://twitter.com/sonniesedge/status/913282229408866304) that the 90s game Elite II simulated the entire Milky Way galaxy, and was still smaller than today's average webpage. 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So, <a href="https://twitter.com/heydonworks?ref_src=twsrc%5Etfw">@heydonworks</a> just reminded me of Elite II and that you could once fit an entire ~galaxy~ into less space than today&#39;s average website. <a href="https://t.co/YbQFe65cF4">pic.twitter.com/YbQFe65cF4</a></p>&mdash; Charlie Owen (@sonniesedge) <a href="https://twitter.com/sonniesedge/status/913282229408866304?ref_src=twsrc%5Etfw">September 28, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 <p>Most of this size is due to sites not offering srcset variants on their images, and not taking the time to optimise images on those that they do offer. Some of it is due to third-party tracking, advertising, and marketing scripts (marketeers may well be the most script-heavy people in any organisation). 
 
