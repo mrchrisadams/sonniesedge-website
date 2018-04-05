@@ -234,12 +234,15 @@ happily scream back, singing the song of their people. Computers could now talk 
 <div class="comp-talk__slide"><img class="comp-talk__image" src="/images/talks/dear-developer/responsive-web-design/responsive-web-design.jpeg" alt=""></div>
 <div class="comp-talk__text">
 <h3>Lessons in Diversity</h3>
-<p>Before that we had effectively assumed that a person on the WWW was making use of one of two browsers, on the desktop, using a mouse (and _maybe_ a keyboard).
-<p>With the release of the iPhone we suddenly had to deal with a new browser (Safari for iOS), a new screen ratio (portrait, rather than landscape), a new screen size (just 320px across!), a new input interface (touchscreen, rather than a mouse), and everyting else that went with using a site on a mobile device.
+<p>Before that we had effectively assumed that a person on the WWW was making use of one of two browsers, on the desktop, using a mouse (and _maybe_ a keyboard). 
+<p>With the release of the iPhone we suddenly had to deal with a new browser (Safari for iOS), a new screen ratio (portrait, rather than landscape), a new screen size (just 320px across!), a new input interface (touchscreen, rather than a mouse), and everything else that went with using a site on a mobile device.
 
-<p>We _had_ to learn about diversity. Sink or swim! We were forced to. Maybe not for the right reasons - we did it because we didn't want to miss out on the market opportunity that mobile devices represented - but certainly with the right effect: we didn't want to exclude people!
+<p>We _had_ to learn about diversity of people and devices. We were forced to. Maybe not for the right reasons - we did it because we didn't want to miss out on the market opportunity that mobile devices represented - but certainly with the right effect: we didn't want to exclude people!
+<p>We fell on [Ethan Marcotte](https://ethanmarcotte.com/)'s wonderful Responsive Web Design with the fervour of a drowning man clutching at a lifebelt. 
 
+<aside class="comp-talk__note">
 <p>Okay, this is another of my Simplistic Explanations. But I'm good at them, no?
+</aside>
 </div>
 </section>
 
