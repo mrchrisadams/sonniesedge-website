@@ -113,6 +113,10 @@ gulp.task('smithy', function () {
       .pipe(BrowserSync.stream());
 });
 
+gulp.task('movies', function () {
+    return gulp.src(['./images/**/*.mp4'], { base: './' })
+    .pipe(gulp.dest('./content'));
+});
 
 gulp.task('images', function () {
     return gulp.src(['./images/**/*.{png,jpg,jpeg}'])
@@ -178,5 +182,5 @@ gulp.task('watch', () => {
     gulp.watch('./layouts/**/*', gulp.series("smithy"));
 });
 
-gulp.task('default', gulp.series( 'sass', 'images', 'smithy', gulp.parallel('watch', 'browser-sync')));
-gulp.task('build', gulp.series('sass', 'images', 'smithy'));
+gulp.task('default', gulp.series( 'sass', 'images', 'movies', 'smithy', gulp.parallel('watch', 'browser-sync')));
+gulp.task('build', gulp.series('sass', 'images', 'movies', 'smithy'));
