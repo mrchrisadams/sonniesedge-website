@@ -15,7 +15,7 @@
 // @import 'loom/060-layout'; // Loom settings above, your modules below
 // I'm not importing this layer as CSS Grid is so powerful now!
 
-@import 'loom/070-objects'; // Loom settings above, your modules below
+// @import 'loom/070-objects'; // Loom settings above, your modules below
 
 @import 'loom/080-ui-components'; // Loom settings above, your modules below
 @import '080-ui-components/sidebar';
@@ -25,8 +25,8 @@
 @import '080-ui-components/postheader';
 @import '080-ui-components/talk';
 
-@import 'loom/090-scaffolding'; // Loom settings above, your modules below
+// @import 'loom/090-scaffolding'; // Loom settings above, your modules below
 
-@import 'loom/100-utilities'; // Loom settings above, your modules below
+// @import 'loom/100-utilities'; // Loom settings above, your modules below
 
-@import 'loom/110-overrides'; // Loom settings above, your modules below
+// @import 'loom/110-overrides'; // Loom settings above, your modules below
