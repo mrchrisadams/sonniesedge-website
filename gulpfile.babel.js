@@ -124,8 +124,7 @@ gulp.task('images', function () {
         {
             'pages/**/*': [
                 { 
-                    width: 300,
-                    rename: { suffix: '-600px' }
+                    width: 300
                 }
             ],
             'posts/**/*': [
