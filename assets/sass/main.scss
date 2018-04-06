@@ -12,7 +12,8 @@
 @import '050-base-elements/images';
 @import '050-base-elements/typography';
 
-@import 'loom/060-layout'; // Loom settings above, your modules below
+// @import 'loom/060-layout'; // Loom settings above, your modules below
+// I'm not importing this layer as CSS Grid is so powerful now!
 
 @import 'loom/070-objects'; // Loom settings above, your modules below
 
